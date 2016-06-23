@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>echars_demo</title>
+</head>
+<body>
+
+<div id="echarts" style="height:400px"> </div>
+<input type="button" id="change" value="切换图表"/>
+<script src="lib/js/jquery-1.11.3.min.js"></script>
+<script src="lib/js/echarts.js"></script>
+<script type="text/javascript">
+;(function(){
+		function drawLine(ec) {
+			var myChart = ec.init(document.getElementById('echarts')); 
+			var option = {
+				title:{
+					text:"过去一周血压变化",
+					},
+				tooltip:{
+					trigger:'items'
+					},
+				legend:{
+					data:['高压','低压']
+					},
+				caculable :true,
+				xAxis:[{
+					type:'category',
+					boundaryGap:false,
+					data:['周一','周二','周三','周四','周五','周六','周日']
+					}],
+				yAxis:[{
+					type:'value',
+					axisLabel:{
+						formatter:'{value}'
+						}
+					}],
+				series:[
+				{
+					name:'高压',
+					type:'line',
+					data:[120,110,130,150,145,132,137],
+					markPoint:{
+						data:[{type:'max',name:'最高血压'}]
+						},
+					markLine:
+					{
+						data: [{type:'average',name:'平均值'}]
+					}
+				},
+				{
+					name:'低压',
+					type:'line',
+					data:[70,60,80,75,77,83,67],
+					markPoint:{
+						data:[{type:'min',name:'最低血压'}]
+						},
+					markLine:{
+						data: [{type:'average',name:'平均值'}]
+					}
+				}
+				]
+				}
+				myChart.setOption(option);
+			}
+			
+			function drawBar(ec){
+				var myChart = ec.init(document.getElementById('echarts')); 
+			var option = {
+    title: {
+        text: '深圳月最低生活费组成（单位:元）',
+        subtext: 'From ExcelHome',
+        sublink: 'http://e.weibo.com/1341556070/AjQH99che'
+    },
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        },
+        formatter: function (params) {
+            var tar = params[0];
+            return tar.name + '<br/>' + tar.seriesName + ' : ' + tar.value;
+        }
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    xAxis : [
+        {
+            type : 'category',
+            splitLine: {show:false},
+            data : ['总费用','房租','水电费','交通费','伙食费','日用品数']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'辅助',
+            type:'bar',
+            stack: '总量',
+            itemStyle:{
+                normal:{
+                    barBorderColor:'rgba(0,0,0,0)',
+                    color:'rgba(0,0,0,0)'
+                },
+                emphasis:{
+                    barBorderColor:'rgba(0,0,0,0)',
+                    color:'rgba(0,0,0,0)'
+                }
+            },
+            data:[0, 1700, 1400, 1200, 300, 0]
+        },
+        {
+            name:'生活费',
+            type:'bar',
+            stack: '总量',
+            itemStyle : { normal: {label : {show: true, position: 'inside'}}},
+            data:[2900, 1200, 300, 200, 900, 300]
+        }
+    ]
+};
+                    
+				myChart.setOption(option);
+				}
+				
+			function bindEvent(){
+				var type = 'bar';
+				$("#change").on('click',function(){
+					if(type =='bar'){
+						type = 'line'
+						}
+					else{
+						type='bar';  
+						}
+					setRequirement(type);
+					});
+				}
+			function setRequirement(type){
+				if(type=='line'){
+					require(
+					[
+						'echarts',
+						'echarts/chart/line',   // 按需加载所需图表，如需动态类型切换功能，别忘了同时加载相应图表
+					],
+					drawLine
+					);
+					}
+				else{
+					require(
+						[
+							'echarts',
+							'echarts/chart/bar',   // 按需加载所需图表，如需动态类型切换功能，别忘了同时加载相应图表
+						],
+						drawBar
+					);
+					}
+				
+				}
+			function init(){
+				require.config({
+					paths:{
+						echarts:'lib/js'}
+					});
+				bindEvent();
+			}
+	init();
+	}(jQuery));
+
+   
+</script>
+</body>
+</html>

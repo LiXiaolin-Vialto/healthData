@@ -1,0 +1,110 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\000031}}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\000037}}
+.header {
+  background: #B2A835;
+  width: 100%;
+  height: 60px;
+  position: fixed; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000312}}
+  .header .nav {
+    padding-left: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000314}}
+    .header .nav ul {
+      line-height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000316}}
+      .header .nav ul li {
+        width: 75px;
+        text-align: center;
+        display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000320}}
+        .header .nav ul li a {
+          color: #eafff9;
+          font-family: "Microsoft YaHei";
+          text-decoration: none;
+          display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000326}}
+        .header .nav ul li a:hover {
+          background: #fffddf;
+          color: #B2A835; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000334}}
+.main {
+  width: 100%;
+  height: 600px;
+  background: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000338}}
+  .main .left {
+    background: #FFF79A;
+    width: 30%;
+    position: fixed;
+    top: 60px;
+    font-family: "Microsoft YaHei"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000344}}
+    .main .left .add {
+      display: block;
+      background: #FFF79A;
+      height: 60px;
+      width: 100%;
+      border: 0px;
+      border-bottom: 1px solid #B2A835; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000353}}
+    .main .left h3 {
+      display: block;
+      cursor: pointer;
+      color: #635B00;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-bottom: 1px solid #B2A835;
+      margin: 0px;
+      font-size: 14px;
+      font-family: "Microsoft YaHei"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000365}}
+    .main .left ul {
+      line-height: 60px;
+      text-align: center;
+      margin: 0px;
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000371}}
+      .main .left ul li {
+        text-align: center;
+        cursor: pointer;
+        background: #FFFDDF;
+        color: #635B00; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000376}}
+        .main .left ul li:hover {
+          background: #FFFABF; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000382}}
+  .main .right {
+    display: inline-block;
+    width: 70%;
+    height: 1000px;
+    float: right;
+    margin-top: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000391}}
+.modal h4, .modal h5 {
+  font-family: "Microsoft YaHei";
+  font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000395}}
+.modal label {
+  font-weight: normal;
+  margin: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\0000399}}
+.modal .modal-content {
+  background: #FFFABF;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  border-radius: 5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/workspace\/healthData\/WebContent\/css\/base\.scss}line{font-family:\00003107}}
+.close span {
+  font-size: 21px; }
+
+/*# sourceMappingURL=base.css.map */

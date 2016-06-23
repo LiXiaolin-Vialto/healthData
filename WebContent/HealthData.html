@@ -1,0 +1,1069 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+<title>健康大数据</title>
+<link rel="stylesheet" href="css/app.css"/>
+<link rel="stylesheet" href="lib/css/screen.css"/>
+<link rel="stylesheet" href="lib/css/jquery.treeview.css" />
+
+
+<script src="lib/js/jquery-1.11.3.min.js"></script>
+<script src="lib/js/jquery.treeview.js"></script>
+<script src="lib/js/jquery.cookie.js"></script>
+<script src="lib/js/echarts.js"></script>
+
+<script src="js/healthdata.js"></script>
+</head>
+<body>
+<div class="main">
+	<div class="banner">健康检测大数据</div>
+	<div class="left">
+    	<ul id="browser" class="filetree">
+           <li>
+           		<span class="folder">1 健康大数据</span>
+                <ul>
+                	<li class="closed"><span class="folder" name="personinformation">1.4 个人基本信息数据元专用属性</span>
+                   	  <ul>
+                            <li><span class="file" name="files_id" type="value">1.4.1 城乡居民档案编号</span></li>
+                            <li><span class="file" name="name" type="value">1.4.2 本人姓名</span></li>
+                            <li><span class="file" name="sex" type="value">1.4.3 性别代码</span></li>
+                            <li><span class="file" name="birth" type="value">1.4.4 出生日期</span></li>
+                            <li><span class="file" name="ID_number" type="value">1.4.5 身份证件类别代码</span></li>
+                            <li><span class="file" name="company_name" type="value">1.4.6 工作单位名称</span></li>
+                            <li><span class="file" name="phone_num" type="value">1.4.7 本人电话号码</span></li>
+                            <li><span class="file" name="contact_name" type="value">1.4.8 联系人姓名</span></li>
+                            <li><span class="file" name="contact_num" type="value">1.4.9 联系人电话号码</span></li>
+                            <li><span class="file" name="add_num" type="value">1.4.10 常驻地址户籍标志</span></li>
+                            <li><span class="file" name="nation" type="value">1.4.11 民族</span></li>
+                            <li><span class="file" name="bloodtype_abo" type="value">1.4.12 ABO血型代码</span></li>
+                            <li><span class="file" name="bloodtype_rh" type="value">1.4.13 RH血型代码</span></li>
+                            <li><span class="file" name="education_type" type="value">1.4.14 学历代码</span></li>
+                            <li><span class="file" name="occupation_id" type="value">1.4.15 职业类别代码</span></li>
+                            <li><span class="file" name="marital_status" type="value">1.4.16 婚姻状况代码</span></li>
+                            <li><span class="file" name="payment_style" type="value">1.4.17 医疗费用支付方式代码</span></li>
+                            <li><span class="file" name="allergic_history" type="value">1.4.18 药物过敏史标志</span></li>
+                            <li><span class="file" name="allergic_source" type="value">1.4.19 药物过敏源</span></li>
+                            <li><span class="file" name="environmental_risk" type="value">1.4.20 环境危险因素暴露类别代码</span></li>
+                            <li><span class="file" name="disease_history" type="value">1.4.21 既往患病种类代码</span></li>
+                            <li><span class="file" name="disease_date" type="value">1.4.22 既往患病确诊日期</span></li>
+                            <li><span class="file" name="operation_history_tag" type="value">1.4.23 手术史标志</span></li>
+                            <li><span class="file" name="operation_history" type="value">1.4.24 手术史</span></li>
+                            <li><span class="file" name="operation_date" type="value">1.4.25 手术史操作时间</span></li>
+                            <li><span class="file" name="trauma_tag" type="value">1.4.26 外伤史标志</span></li>
+                            <li><span class="file" name="trauma_name" type="value">1.4.27 外伤名称</span></li>
+                            <li><span class="file" name="trauma_date" type="value">1.4.28 外伤发生日期时间</span></li>
+                            <li><span class="file" name="blood_trans_tag" type="value">1.4.29 输血史标志</span></li>
+                            <li><span class="file" name="blood_trans_history" type="value">1.4.30 输血原因</span></li>
+                            <li><span class="file" name="blood_trans_date" type="value">1.4.31 输血日期时间</span></li>
+                            <li><span class="file" name="family_disease_tag" type="value">1.4.32 家族性疾病名称代码</span></li>
+                            <li><span class="file" name="relations_to" type="value">1.4.33 患者与本人关系代码</span></li>
+                            <li><span class="file" name="inherited_disease_his" type="value">1.4.34 遗传性疾病史</span></li>
+                            <li><span class="file" name="disability_tag" type="value">1.4.35 残疾情况代码</span></li>
+                            <li><span class="file" name="kitchen_ventilation_tag" type="value">1.4.36 家庭厨房排风设施标识</span></li>
+                            <li><span class="file" name="kitchen_ventilation_type" type="value">1.4.37 家庭厨房排风设施类别代码</span></li>
+                            <li><span class="file" name="fule_type_tag" type="value">1.4.38 家庭燃料类型类别代码</span></li>
+                            <li><span class="file" name="water_type_tag" type="value">1.4.39 家庭饮水类别代码</span></li>
+                            <li><span class="file" name="bathroom_type_tag" type="value">1.4.40 家庭厕所类别代码</span></li>
+                            <li><span class="file" name="animal_type" type="value">1.4.41 家庭禽畜栏类别</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="healthy_records_attribute">1.5 健康体检数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="files_id" type="value">1.5.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="doctor_name" type="value">1.5.2 责任医生姓名</span></li>
+                            <li><span class="file" name="test_date" type="value">1.5.3 检测日期</span></li>
+                            <li><span class="file" name="symptom_code" type="value">1.5.4 症状代码</span></li>
+                            <li><span class="file" name="symptom_name" type="value">1.5.5 症状名称</span></li>
+                            <li><span class="file" name="tempreture" type="array">1.5.6 体温</span></li>
+                            <li><span class="file" name="pulse_rate" type="array">1.5.7 脉率（次/min）</span></li>
+                            <li><span class="file" name="breath_rate" type="array">1.5.8 呼吸频率（次/min）</span></li>
+                            <li><span class="file" name="left_systolic_pres" type="array">1.5.9 左侧收缩压mmHg</span></li>
+                            <li><span class="file" name="left_diastolic_pre" type="array">1.5.10 左侧舒张压mmHg</span></li>
+                            <li><span class="file" name="right_systolic_pres" type="array">1.5.11 右侧收缩压mmHg</span></li>
+                            <li><span class="file" name="right_diastolic_pre" type="array">1.5.12 右侧舒张压mmHg</span></li>
+                            <li><span class="file" name="height" type="value">1.5.13 身高cm</span></li>
+                            <li><span class="file" name="weight" type="array">1.5.14 体重(kg)</span></li>
+                            <li><span class="file" name="waist" type="array">1.5.15 腰围(cm)</span></li>
+                            <li><span class="file" name="BMI" type="array">1.5.16 体质指数</span></li>
+                            <li><span class="file" name="elderly_helth_evaluation" type="value">1.5.17 老年人健康状态自我评估代码</span></li>
+                            <li><span class="file" name="elderly_assement_evaluation" type="value">1.5.18 老年人生活自理能力自我评估代码</span></li>
+                            <li><span class="file" name="elderly_recgn_function_res" type="value">1.5.19 老年人认知功能粗筛结果代码</span></li>
+                            <li><span class="file" name="elderly_recgn_function_score" type="value">1.5.20 老年人认知功能评分</span></li>
+                            <li><span class="file" name="elderly_depress_score" type="value">1.5.21 老年人抑郁评分</span></li>
+                            <li><span class="file" name="sport_rate_code" type="value">1.5.22 运动频率代码</span></li>
+                            <li><span class="file" name="sports_time" type="array">1.5.23 运动时长（min）</span></li>
+                           	<li><span class="file" name="exercise_keep_month" type="value">1.5.24 坚持运动时间（月）</span></li>
+                            <li><span class="file" name="exercise_type" type="value">1.5.25 运动方式说明</span></li>
+                            <li><span class="file" name="eating_habbit_code" type="value">1.5.26 饮食习惯代码</span></li>
+                            <li><span class="file" name="smoking_code" type="value">1.5.27 吸烟状况代码</span></li>
+                            <li><span class="file" name="smoking_daily" type="array">1.5.28 日吸烟量</span></li>
+                            <li><span class="file" name="start_smoke_age" type="value">1.5.29 开始吸烟年龄（岁）</span></li>
+                            <li><span class="file" name="quit_smoke_age" type="value">1.5.30 戒烟年龄</span></li>
+                            <li><span class="file" name="drink_rate_code" type="value">1.5.31 饮酒频率代码</span></li>
+                            <li><span class="file" name="drink_daily" type="array">1.5.32 日饮酒量</span></li>
+                            <li><span class="file" name="quit_dring_tag" type="value">1.5.33 戒酒标志</span></li>
+                            <li><span class="file" name="quit_drink_age" type="value">1.5.34 戒酒年龄</span></li>
+                            <li><span class="file" name="start_drink_age" type="value">1.5.35 开始饮酒年龄</span></li>
+                            <li><span class="file" name="drunk_tag" type="value">1.5.36 醉酒标志</span></li>
+                            <li><span class="file" name="drink_type_tag" type="value">1.5.37 饮酒种类代码</span></li>
+                            <li><span class="file" name="occupation_exposure_tag" type="value">1.5.38 职业暴露标志</span></li>
+                            <li><span class="file" name="damage_occupation_description" type="value">1.5.39 有危害因素接触职业描述</span></li>
+                            <li><span class="file" name="occupation_danger_factor" type="value">1.5.40 职业暴露危险因素种类代码</span></li>
+                            <li><span class="file" name="occupation_protection_tag" type="value">1.5.41 职业防护措施标志</span></li>
+                            <li><span class="file" name="mouth_result_code" type="value">1.5.42 口唇外观检查结果代码</span></li>
+                            <li><span class="file" name="tooth_type" type="value">1.5.43 齿类别代码</span></li>
+                            <li><span class="file" name="throat_examine_result" type="value">1.5.44 咽部检查结果代码</span></li>
+                            <li><span class="file" name="left_vision" type="value">1.5.45 左眼裸眼视力</span></li>
+                            <li><span class="file" name="right_vision" type="value">1.5.46 右眼裸眼视力</span></li>
+                            <li><span class="file" name="left_adjust_vision" type="value">1.5.47 左眼矫正视力</span></li>
+                            <li><span class="file" name="right_adjust_vision" type="value">1.5.48 右眼矫正视力</span></li>
+                            <li><span class="file" name="hearing_result" type="value">1.5.49 听力检测结果代码</span></li>
+                            <li><span class="file" name="moto_function_code" type="value">1.5.50 运动功能状态代码</span></li>
+                            <li><span class="file" name="funds_unsual" type="value">1.5.51 眼底检查结果异常标志</span></li>
+                            <li><span class="file" name="skin_result" type="value">1.5.52 皮肤检查结果</span></li>
+                            <li><span class="file" name="scleral_result" type="value">1.5.53 巩膜检查结果代码</span></li>
+                            <li><span class="file" name="lymphnode_tag" type="value">1.5.54 淋巴结检查结果代码</span></li>
+                            <li><span class="file" name="breelchest_tag" type="value">1.5.55 桶状胸标志</span></li>
+                            <li><span class="file" name="lung_breath_tag" type="value">1.5.56 肺部呼吸标志</span></li>
+                            <li><span class="file" name="lung_weirdsounds_desc" type="value">1.5.57 肺部异常呼吸音的描述</span></li>
+                            <li><span class="file" name="lung_rale_description" type="value">1.5.58 肺部罗音描述</span></li>
+                            <li><span class="file" name="hert_rate" type="array">1.5.59 心率</span></li>
+                            <li><span class="file" name="hert_rate_style" type="value">1.5.60 心率类别代码</span></li>
+                            <li><span class="file" name="cardiac_murmur_tag" type="value">1.5.61 心脏杂音标志</span></li>
+                            <li><span class="file" name="cardiac_murmur_des" type="value">1.5.62 心脏杂音描述</span></li>
+                            <li><span class="file" name="abdominal_tender_tag" type="value">1.5.63 腹部压痛标志</span></li>
+                            <li><span class="file" name="abdominal_tender_des" type="value">1.5.64 腹部压痛描述</span></li>
+                            <li><span class="file" name="abdominal_mass_tag" type="value">1.5.65 腹部包块标志</span></li>
+                            <li><span class="file" name="abdominal_mass_des" type="value">1.5.66 腹部包块描述</span></li>
+                            <li><span class="file" name="liver_large_tag" type="value">1.5.67 肝大标志</span></li>
+                            <li><span class="file" name="liver_large_des" type="value">1.5.68 肝大描述</span></li>
+                            <li><span class="file" name="abdominal_shift_sound_tag" type="value">1.5.69 腹部移动性浊音标志</span></li>
+                            <li><span class="file" name="abdominal_shift_sound_des" type="value">1.5.70 腹部移动性浊音描述</span></li>
+                            <li><span class="file" name="edema_tag" type="value">1.5.71 下水肿检查结果代码</span></li>
+                            <li><span class="file" name="zujidongmai_tag" type="value">1.5.72 足脊动脉搏动代码</span></li>
+                            <li><span class="file" name="gangmenzhijian_tag" type="value">1.5.73 肛门指检结果代码</span></li>
+                            <li><span class="file" name="breast_result_tag" type="value">1.5.74 乳腺结果检查代码</span></li>
+                            <li><span class="file" name="vulva_unsuall_tag" type="value">1.5.75 外阴异常标志</span></li>
+                            <li><span class="file" name="vulva_unsuall_des" type="value">1.5.76 外阴异常描述</span></li>
+                            <li><span class="file" name="vagina_unsual_tag" type="value">1.5.77 阴道异常标志</span></li>
+                            <li><span class="file" name="vagina_unsual_des" type="value">1.5.78 阴道异常描述</span></li>
+                            <li><span class="file" name="cervical_unsual_tag" type="value">1.5.79 宫颈异常标志</span></li>
+                            <li><span class="file" name="cervical_unsual_des" type="value">1.5.80 宫颈异常描述</span></li>
+                            <li><span class="file" name="uterine_unsual_tag" type="value">1.5.81 宫体异常标志</span></li>
+                            <li><span class="file" name="uterine_unsual_des" type="value">1.5.82 宫体异常描述</span></li>
+                            <li><span class="file" name="accessory_unsual_tag" type="value">1.5.83 附件异常标志</span></li>
+                            <li><span class="file" name="accessory_unsual_des" type="value">1.5.84 附件异常描述</span></li>
+                            <li><span class="file" name="other_result" type="value">1.5.85 其他查体结果</span></li>
+                            <li><span class="file" name="hemoglobin_value" type="value">1.5.86 血红蛋白值</span></li>
+                            <li><span class="file" name="blood_cell_count" type="value">1.5.87 血细胞计数值</span></li>
+                            <li><span class="file" name="platelet_count" type="value">1.5.88 血小板计数值</span></li>
+                            <li><span class="file" name="urine_protein_result" type="value">1.5.89 尿蛋白定性检查结果代码</span></li>
+                            <li><span class="file" name="urine_protein_value" type="value">1.5.90 尿蛋白定量检测值</span></li>
+                            <li><span class="file" name="urine_detection_code" type="value">1.5.91 尿糖定性检测结果代码</span></li>
+                            <li><span class="file" name="urine_amount_value" type="value">1.5.92 尿糖定量检测值</span></li>
+                            <li><span class="file" name="urine_acetone_tag" type="value">1.5.93 尿酮体定性检测结果代码</span></li>
+                            <li><span class="file" name="urine_acetone_tag" type="value">1.5.94 尿潜血检测结果代码</span></li>
+                            <li><span class="file" name="urinary_gravity" type="value">1.5.95 尿比重</span></li>
+                            <li><span class="file" name="urinary_PH" type="value">1.5.96 尿液酸碱度</span></li>
+                            <li><span class="file" name="urinary_blood_protein" type="value">1.5.97 尿微量血蛋白值</span></li>
+                            <li><span class="file" name="fasting_blood_sugar" type="value">1.5.98 空腹血糖值</span></li>
+                            <li><span class="file" name="two_hours_blood_sugar" type="value">1.5.99 餐后2小时血糖值</span></li>
+                            <li><span class="file" name="electrocardiogram_unsual_tag" type="value">1.5.100 心电图异常标志</span></li>
+                            <li><span class="file" name="electrocardiogram_unsual_char" type="value">1.5.101 心电图异常描述</span></li>
+                            <li><span class="file" name="fecal_blood_tag" type="value">1.5.102 大便潜血标志</span></li>
+                            <li><span class="file" name="glycosylated_hemoglobin_value" type="value">1.5.103 糖化血红蛋白值</span></li>
+                            <li><span class="file" name="hepatitisB_surface_tag" type="value">1.5.104 乙肝表面抗原检测结果代码</span></li>
+                            <li><span class="file" name="HepatitisB_E_tag" type="value">1.5.105 乙肝e抗原检测结果代码</span></li>
+                            <li><span class="file" name="HepatitisB_surface_antibody_tag" type="value">1.5.106 乙肝表面抗体检测结果代码</span></li>
+                            <li><span class="file" name="HepatitisB_E_antibody_tag" type="value">1.5.107 乙肝e抗体检测结果代码</span></li>
+                            <li><span class="file" name="HepatitisB_core_antibody_tag" type="value">1.5.108 乙肝核心抗体检测代码</span></li>
+                            <li><span class="file" name="SGPT_value" type="value">1.5.109 血清谷丙转氨酶值</span></li>
+                            <li><span class="file" name="SGOT_value" type="value">1.5.110 血清谷草转氨酶值</span></li>
+                            <li><span class="file" name="hemoglobin_concentration" type="value">1.5.111 血红蛋白浓度</span></li>
+                            <li><span class="file" name="total_bilirubin_value" type="value">1.5.112 总胆红素值</span></li>
+                            <li><span class="file" name="conjugated_bilirubin_value" type="value">1.5.113 总胆红素值</span></li>
+                            <li><span class="file" name="Scr_value" type="value">1.5.114 血肌酐值</span></li>
+                            <li><span class="file" name="blood_BUN_value" type="value">1.5.115 血尿素氨检测值</span></li>
+                            <li><span class="file" name="blood_potassium_concentration" type="value">1.5.116 血钾浓度</span></li>
+                            <li><span class="file" name="serum_sodium_concentration" type="value">1.5.117 血钠浓度</span></li>
+                            <li><span class="file" name="cholesterol_value" type="value">1.5.118 总胆固醇值</span></li>
+                            <li><span class="file" name="triglyceride_value" type="value">1.5.119 甘油三酯值</span></li>
+                            <li><span class="file" name="SLDLC_value" type="value">1.5.120 血清低密度脂蛋白胆固醇检测值</span></li>
+                            <li><span class="file" name="SHDLC_value" type="value">1.5.121 血清高密度脂蛋白胆固醇检测值</span></li>
+                            <li><span class="file" name="carcinoembryonic_antige_con" type="value">1.5.122 癌胚抗原浓度值</span></li>
+                            <li><span class="file" name="breast_Xray_unsual_tag" type="value">1.5.123 胸部X线检测异常标志</span></li>
+                            <li><span class="file" name="breast_Xray_unsual_des" type="value">1.5.124 胸部X线检测异常描述</span></li>
+                            <li><span class="file" name="bultrasonic_tag" type="value">1.5.125 B超检查异常标志</span></li>
+                            <li><span class="file" name="bultrasonic_des" type="value">1.5.126 B超检测异常描述</span></li>
+                            <li><span class="file" name="others_examine" type="value">1.5.127 其他辅助检查</span></li>
+                            <li><span class="file" name="chinese_medical_classification" type="value">1.5.128 中医体质分类代码</span></li>
+                            <li><span class="file" name="chinese_medical_cls_tag" type="value">1.5.129 中医体质分类判定结果代码</span></li>
+                            <li><span class="file" name="existing_major_helth" type="value">1.5.130 现存主要健康问题代码</span></li>
+                            <li><span class="file" name="vaccine_name" type="value">1.5.131 疫苗名称代码</span></li>
+                            <li><span class="file" name="vaccine_bach" type="value">1.5.132 疫苗批号</span></li>
+                            <li><span class="file" name="vaccination_date" type="value">1.5.133 疫苗接种日期</span></li>
+                            <li><span class="file" name="vaccination_office" type="value">1.5.134 疫苗接种单位名称</span></li>
+                            <li><span class="file" name="heath_assement_unsuall_tag" type="value">1.5.135 健康评价异常标志</span></li>
+                            <li><span class="file" name="heath_assement_unsuall_des" type="value">1.5.136 健康评价异常描述</span></li>
+                            <li><span class="file" name="health_instruction_code" type="value">1.5.137 健康指导代码</span></li>
+                            <li><span class="file" name="risk_factor_suggestion" type="value">1.5.138 危险因素控制建议代码</span></li>
+                            <li><span class="file" name="target_weight" type="value">1.5.139 目标体重</span></li>
+                            <li><span class="file" name="recommend_vaccine_name" type="value">1.5.140 建议接种疫苗名称代码</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="born_baby_table">1.6 新生儿家庭访视数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="files_id"  type="value">1.6.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="form_mumber"  type="value">1.6.2 新生儿家庭访视记录表单编号</span></li>
+                            <li><span class="file" name="baby_name"  type="value">1.6.3 新生儿姓名</span></li>
+                            <li><span class="file" name="baby_gender"  type="value">1.6.4 新生儿性别代码</span></li>
+                            <li><span class="file" name="baby_birthday"  type="value">1.6.5 新生儿出生日期</span></li>
+                            <li><span class="file" name="baby_id_type"  type="value">1.6.6 新生儿身份证件类别代码</span></li>
+                            <li><span class="file" name="baby_id_num"  type="value">1.6.7 新生儿身份证件号码</span></li>
+                            <li><span class="file" name="father_name"  type="value">1.6.8 父亲姓名</span></li>
+                            <li><span class="file" name="father_birthday"  type="value">1.6.9 父亲出生日期</span></li>
+                            <li><span class="file" name="father_phone"  type="value">1.6.10 父亲电话号码</span></li>
+                            <li><span class="file" name="father_occupation"  type="value">1.6.11 父亲职业类别代码</span></li>
+                            <li><span class="file" name="mother_name"  type="value">1.6.12 母亲姓名</span></li>
+                            <li><span class="file" name="mother_birthday"  type="value">1.6.13 母亲出生日期</span></li>
+                            <li><span class="file" name="mother_phone"  type="value">1.6.14 母亲电话号码</span></li>
+                            <li><span class="file" name="mother_occupation"  type="value">1.6.15 母亲职业类别代码</span></li>
+                            <li><span class="file" name="address"  type="value">1.6.16 现住地址-省（自治区、直辖市）</span></li>
+                            <li><span class="file" name="week_of_birth"  type="value">1.6.17 出生孕周</span></li>
+                            <li><span class="file" name="pregnancy_complications"  type="value">1.6.18 母亲妊娠合并症/并发症史</span></li>
+                            <li><span class="file" name="Midwifery_organization"  type="value">1.6.19 助产机构名称</span></li>
+                            <li><span class="file" name="last_delivery_code"  type="value">1.6.20 末次分娩方式代码</span></li>
+                            <li><span class="file" name="twins_treplets_tag"  type="value">1.6.21 双多胎标志</span></li>
+                            <li><span class="file" name="neonatal_asphyxia_tag"  type="value">1.6.22 新生儿窒息标志</span></li>
+                            <li><span class="file" name="apgar_score"  type="value">1.6.23 Apgar评分值（分）</span></li>
+                            <li><span class="file" name="neonatal_malformation_tag"  type="value">1.6.24 新生儿畸形标志</span></li>
+                            <li><span class="file" name="neonatal_malformation_des"  type="value">1.6.25 新生儿畸形描述</span></li>
+                            <li><span class="file" name="neonatal_hearing_condition"  type="value">1.6.26 新生儿听力筛查情况代码</span></li>
+                            <li><span class="file" name="neonatal_hearing_result"  type="value">1.6.27 新生儿听力筛查结果代码</span></li>
+                            <li><span class="file" name="neonatal_disease_program"  type="value">1.6.28 新生儿疾病筛查项目代码</span></li>
+                            <li><span class="file" name="birth_weight"  type="value">1.6.29 出生体重(g)</span></li>
+                            <li><span class="file" name="birth_height"  type="value">1.6.30 出生身长(cm)</span></li>
+                            <li><span class="file" name="weight"  type="array">1.6.31 体重(kg)</span></li>
+                            <li><span class="file" name="feed_type_code"  type="value">1.6.32 喂养方式类别代码</span></li>
+                            <li><span class="file" name="nurse_times_everyday"  type="array">1.6.33 每天吃奶次数</span></li>
+                            <li><span class="file" name="vomit_tag"  type="value">1.6.34 呕吐标志</span></li>
+                            <li><span class="file" name="neonatal_stool_code"  type="value">1.6.35 新生儿大便性状代码</span></li>
+                            <li><span class="file" name="stool_times"  type="array">1.6.36 大便次数(次/d)</span></li>
+                            <li><span class="file" name="tempreture"  type="array">1.6.37 体温</span></li>
+                            <li><span class="file" name="puse_rate"  type="array">1.6.38 脉率（次/min)</span></li>
+                            <li><span class="file" name="breath_rate"  type="array">1.6.39 呼吸频率（次/min)</span></li>
+                            <li><span class="file" name="neonatal_complexion_code"  type="value">1.6.40 新生儿面色代码</span></li>
+                            <li><span class="file" name="jaundice_location_code"  type="value">1.6.41 黄疸部位代码</span></li>
+                            <li><span class="file" name="anterior_fontanel_tranverse"  type="array">1.6.42 前囟横径(cm)</span></li>
+                            <li><span class="file" name="anterior_fontanel_longitudinal"  type="array">1.6.43 前囟纵径(cm)</span></li>
+                            <li><span class="file" name="anterior_fontanel_tension_code"  type="array">1.6.44 前囟张力代码</span></li>
+                            <li><span class="file" name="eye_visual_unsual_code"  type="value">1.6.45 眼外观检查异常标志</span></li>
+                            <li><span class="file" name="eye_visual_unsual_des"  type="value">1.6.46 眼外观检查异常结果描述</span></li>
+                            <li><span class="file" name="ear_visual_unsual_code"  type="value">1.6.47 耳外观检查异常标志</span></li>
+                            <li><span class="file" name="ear_visual_unsual_des"  type="value">1.6.48 耳外观检查异常结果描述</span></li>
+                            <li><span class="file" name="nose_unsual_code"  type="value">1.6.49 鼻检查异常标志</span></li>
+                            <li><span class="file" name="nose_unsual_des"  type="value">1.6.50 鼻检查异常结果描述</span></li>
+                            <li><span class="file" name="mouth_unsual_code"  type="value">1.6.51 口腔检查异常标志</span></li>
+                            <li><span class="file" name="mouth_unsual_des"  type="value">1.6.52 口腔检查异常结果描述</span></li>
+                            <li><span class="file" name="lungs_unsual_code"  type="value">1.6.53 肺部听诊异常标志</span></li>
+                            <li><span class="file" name="lungs_unsual_des"  type="value">1.6.54 肺部听诊异常结果描述</span></li>
+                            <li><span class="file" name="heart_unsual_code"  type="value">1.6.55 心脏部听诊异常标志</span></li>
+                            <li><span class="file" name="heart_unsual_des"  type="value">1.6.56 心脏听诊异常结果描述</span></li>
+                            <li><span class="file" name="abodomen_unsual_code"  type="value">1.6.57 腹部触诊异常标志</span></li>
+                            <li><span class="file" name="abodomen_unsual_des"  type="value">1.6.58 四肢活动度异常标志</span></li>
+                            <li><span class="file" name="limb_activity_code"  type="value">1.6.59 四肢活动度异常结果描述</span></li>
+                            <li><span class="file" name="limb_activity_des"  type="value">1.6.60 颈部包块标志</span></li>
+                            <li><span class="file" name="neck_mass_code"  type="value">1.6.61 颈部包块检查结果描述</span></li>
+                            <li><span class="file" name="neck_mass_des"  type="value">1.6.62 颈部包块检查结果描述</span></li>
+                            <li><span class="file" name="skin_examin_code"  type="value">1.6.63 皮肤检查结果代码</span></li>
+                            <li><span class="file" name="anus_examin_tag"  type="value">1.6.64 肛门检查异常标志</span></li>
+                            <li><span class="file" name="anus_examin_tag"  type="value">1.6.65 肛门检查异常结果描述</span></li>
+                            <li><span class="file" name="external_genital_code"  type="value">1.6.66 外生殖器检查异常标志</span></li>
+                            <li><span class="file" name="external_genital_des"  type="value">1.6.67 外生殖器检查异常结果描述</span></li>
+                            <li><span class="file" name="spine_unsual_tag"  type="value">1.6.68 脊柱检查异常标志</span></li>
+                            <li><span class="file" name="spine_unsual_des"  type="value">1.6.69 脊柱检查异常结果描述</span></li>
+                            <li><span class="file" name="cord_examin_code"  type="value">1.6.70 脐带检查结果代码</span></li>
+                            <li><span class="file" name="referral_sign"  type="value">1.6.71 转诊标志</span></li>
+                            <li><span class="file" name="referral_hospital_name"  type="value">1.6.72 转入医疗机构名称</span></li>
+                            <li><span class="file" name="referral_agency_name"  type="value">1.6.73 转入机构科室名称</span></li>
+                            <li><span class="file" name="referral_reason"  type="value">1.6.74 转诊原因</span></li>
+                            <li><span class="file" name="newlybron_health_typecode"  type="value">1.6.75 新生儿访视健康指导类别代码</span></li>
+                            <li><span class="file" name="doctor_name"  type="value">1.6.76 访视医师姓名</span></li>
+                            <li><span class="file" name="interview_date"  type="value">1.6.77 本次访视日期</span></li>
+                            <li><span class="file" name="next_interview_date"  type="value">1.6.78 下次访视日期</span></li>
+                            <li><span class="file" name="next_interview_location"  type="value">1.6.79 下次访视地点</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="child_health_data">1.7 儿童健康检查数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="id"  type="value">1.7.1 本人身份证号</span></li>
+                            <li><span class="file" name="healthrecords_ID"  type="value">1.7.2 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="childHealthExaminationNO"  type="value">1.7.3 儿童健康检查记录表单编号</span></li>
+                            <li><span class="file" name="age_heightEvaluationResultNO"  type="value">1.7.4 年龄别身高评价结果代码</span></li>
+                            <li><span class="file" name="age_weightEvaluationResultNO"  type="value">1.7.5 年龄别体重评价结果代码</span></li>
+                            <li><span class="file" name="physicalDevelopmentEvaluationNO"  type="value">1.7.6 体格发育评价代犸</span></li>
+                            <li><span class="file" name="headCircumference"  type="array">1.7.7 头围(cm)</span></li>
+                            <li><span class="file" name="childComplexionNO"  type="value">1.7.8 儿童面色代码</span></li>
+                            <li><span class="file" name="skinExaminationFlag"  type="value">1.7.9 皮肤检查异常标志</span></li>
+                            <li><span class="file" name="bregmaCloseFlag"  type="value">1.7.10 前囟闭合标志</span></li>
+                            <li><span class="file" name="bregmaTransverseLength"  type="value">1.7.11 前囟横径(cm)</span></li>
+                            <li><span class="file" name="bregmaLongitudinalLength"  type="value">1.7.12 前囟纵径(cm)</span></li>
+                            <li><span class="file" name="neckBlockFlag"  type="value">1.7.13 颈部包块标志</span></li>
+                            <li><span class="file" name="leftEyeAppearancecheckFlag"  type="value">1.7.14 眼外观检查异常标志</span></li>
+                            <li><span class="file" name="leftEyeActualValue"  type="value">1.7.15 左眼裸眼远视力值</span></li>
+                            <li><span class="file" name="rightEyeActualValue"  type="value">1.7.16 右眼裸眼远视力值</span></li>
+                            <li><span class="file" name="leftEyeCorrectValue"  type="value">1.7.17 左眼矫正远视力值</span></li>
+                            <li><span class="file" name="rightEyeCorrectValue"  type="value">1.7.18 右眼矫正远视力值</span></li>
+                            <li><span class="file" name="earAppearanceFlag"  type="value">1.7.19 耳外观检查异常标志</span></li>
+                            <li><span class="file" name="newbornHearingCheckResultNO"  type="value">1.7.20 新生儿听力筛查结果代码</span></li>
+                            <li><span class="file" name="OralCheckFlag"  type="value">1.7.21 口腔检查异常标志</span></li>
+                            <li><span class="file" name="teethNumber"  type="value">1.7.22 出牙数(颗)</span></li>
+                            <li><span class="file" name="dentalCariesNumber"  type="value">1.7.23 龋齿数(颗)</span></li>
+                            <li><span class="file" name="lungAuscultationFlag"  type="value">1.7.24 肺部听诊异常标志</span></li>
+                            <li><span class="file" name="heartAuscultationFlag"  type="value">1.7.25 心脏听诊异常标志</span></li>
+                            <li><span class="file" name="AbdomenAuscultationFlag"  type="value">1.7.26 腹部触诊异常标志</span></li>
+                            <li><span class="file" name="umbilicalCordAbscisicFlag"  type="value">1.7.27 脐带脱落标志</span></li>
+                            <li><span class="file" name="umbilicalCordCheckNO"  type="value">1.7.28 脐带检查结果代码</span></li>
+                            <li><span class="file" name="umbilicalHerniaFlag"  type="value">1.7.29 脐疝标志</span></li>
+                            <li><span class="file" name="limbActivityFlag"  type="value">1.7.30 四肢活动度异常标志</span></li>
+                            <li><span class="file" name="gaitFlag"  type="value">1.7.31 四肢活动度异常标志</span></li>
+                            <li><span class="file" name="suspiciousRicketsNO"  type="value">1.7.32 可疑佝偻病症状代码</span></li>
+                            <li><span class="file" name="suspiciousRicketsSignsNO"  type="value">1.7.33 可疑佝偻病体征代码</span></li>
+                            <li><span class="file" name="analExaminationFlag"  type="value">1.7.34 肛门检查异常标志</span></li>
+                            <li><span class="file" name="genitalExaminationFlag"  type="value">1.7.35 外生殖器检查异常标志</span></li>
+                            <li><span class="file" name="hemoglobinValue"  type="value">1.7.36 血红蛋白值(g/I')</span></li>
+                            <li><span class="file" name="huwaihuodongtime"  type="array">1.7.37 户外活动时长(h)</span></li>
+                            <li><span class="file" name="fuyongweishengsuDname"  type="value">1.7.38 服用维生素D名称</span></li>
+                            <li><span class="file" name="fuyongweishengsuDjiliang"  type="value">1.7.39 服用维生素D剂量(IU/d)</span></li>
+                            <li><span class="file" name="erotngfayupinggutongguoFlag"  type="value">1.7.40 儿童发育评估通过标志</span></li>
+                            <li><span class="file" name="liangcisuijijianhuanbingFlag"  type="value">1.7.41 两次随访间患病标志</span></li>
+                            <li><span class="file" name="liangcisuijijianhuanfeiyanzhuyuanNumber"  type="value">1.7.42 两次随访间患肺炎住院次数</span></li>
+                            <li><span class="file" name="liangcisuijijianyinwaishangzhuyuanNumber"  type="value">1.7.43 两次随访间患腹泻住院次数</span></li>
+                            <li><span class="file" name="waishangzhuyuanNumber"  type="value">1.7.44 两次随访间因外伤住院次数</span></li>
+                            <li><span class="file" name="otherjibing"  type="value">1.7.45 两次随访间患其他疾病情况</span></li>
+                            <li><span class="file" name="zhuanzhenFlag"  type="value">1.7.46 转诊标志</span></li>
+                            <li><span class="file" name="zhuanzhenReason"  type="value">1.7.47 转诊原因</span></li>
+                            <li><span class="file" name="zhuanruyiliaojigouName"  type="value">1.7.48 转入医疗机构名称</span></li>
+                            <li><span class="file" name="zhuanrujigoukeshiName"  type="value">1.7.49 转入机构科室名称</span></li>
+                            <li><span class="file" name="childhealthNO"  type="value">1.7.50 儿童健康指导类别代码</span></li>
+                            <li><span class="file" name="suifangDate"  type="value">1.7.51 随访日期</span></li>
+                            <li><span class="file" name="suifangyishiName"  type="value">1.7.52 随访医师姓名</span></li>
+                            <li><span class="file" name="nextsuifangDate"  type="value">1.7.53 下次随访日期</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="gravida_heath_data">1.8 产前随访数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="id"  type="value">1.8.1 本人身份证号</span></li>
+                            <li><span class="file" name="healthrecords_ID"  type="value">1.8.2 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="antenatalVisitRecordFormID"  type="value">1.8.3 产前随访记录表单编号</span></li>
+                            <li><span class="file" name="name"  type="value">1.8.4 本人姓名</span></li>
+                            <li><span class="file" name="wirteDate"  type="value">1.8.5 填写日期</span></li>
+                            <li><span class="file" name="gestationalWeeks"  type="value">1.8.6 孕周(d)</span></li>
+                            <li><span class="file" name="bornDate"  type="value">1.8.7 出生日期</span></li>
+                            <li><span class="file" name="husbandName"  type="value">1.8.8 丈夫姓名</span></li>
+                            <li><span class="file" name="husbandTelNum"  type="value">1.8.9 丈夫电话号码</span></li>
+                            <li><span class="file" name="husbandBornDate"  type="value">1.8.10 丈夫出生日期</span></li>
+                            <li><span class="file" name="gestationalNumber"  type="value">1.8.11 孕次</span></li>
+                            <li><span class="file" name="giveBirthNumber"  type="value">1.8.12 产次</span></li>
+                            <li><span class="file" name="vaginalDeliveryNumber"  type="value">1.8.13 阴道分娩次数(次)</span></li>
+                            <li><span class="file" name="caesareanSectionNumber"  type="value">1.8.14 剖宫产次数(次)</span></li>
+                            <li><span class="file" name="beSureLastMenstrualDateFlag"  type="value">1.8.15 末次月经日期明确标志</span></li>
+                            <li><span class="file" name="lastMenstrualDate"  type="value">1.8.16 末次月经日期</span></li>
+                            <li><span class="file" name="preProductionTime"  type="value">1.8.17 预产期</span></li>
+                            <li><span class="file" name="pastDiseaseHistory"  type="value">1.8.18 既往疾病史</span></li>
+                            <li><span class="file" name="familyDiseaseHistoryTypeID"  type="value">1.8.19 家族疾病史类别代码</span></li>
+                            <li><span class="file" name="familyPastDiseaseTypeID"  type="value">1.8.20 家族既往患病种类代码</span></li>
+                            <li><span class="file" name="openToHarmfulFactorsID"  type="value">1.8.21 接触有害因素类别代犸</span></li>
+                            <li><span class="file" name="gynecologicSurgicalHistoryFlag"  type="value">1.8.22 妇科手术史标志</span></li>
+                            <li><span class="file" name="gynecologicSurgicalHistory"  type="value">1.8.23 妇科手术史</span></li>
+                            <li><span class="file" name="pregnancyComplicationsHistory"  type="value">1.8.24 妊娠合并症/并发症史</span></li>
+                            <li><span class="file" name="abortionsNumber"  type="value">1.8.25 流产总次数(次)</span></li>
+                            <li><span class="file" name="stillbirthNumber"  type="value">1.8.26 死产例数</span></li>
+                            <li><span class="file" name="deadBirthNumber"  type="value">1.8.27 死胎例数</span></li>
+                            <li><span class="file" name="neonatalDeathNumber"  type="value">1.8.28 新生儿死亡例数</span></li>
+                            <li><span class="file" name="birthWithDefectsNumber"  type="value">1.8.29 出生缺陷儿例数</span></li>
+                            <li><span class="file" name="height"  type="value">1.8.30 身高(cm)</span></li>
+                            <li><span class="file" name="weight"  type="value">1.8.31 体重(kg)</span></li>
+                            <li><span class="file" name="constitutionalIndex"  type="value">1.8.32 体质指数</span></li>
+                            <li><span class="file" name="systolicBloodPressure"  type="value">1.8.33 收缩压(mmHg)</span></li>
+                            <li><span class="file" name="diastolicBloodPressure"  type="value">1.8.34 舒张压(mmHg)</span></li>
+                            <li><span class="file" name="chiefComplaint"  type="value">1.8.35 主诉</span></li>
+                            <li><span class="file" name="lungAuscultationExceptionFlag"  type="value">1.8.36 肺部听诊异常标志</span></li>
+                            <li><span class="file" name="lungAuscultationExceptionResult"  type="value">1.8.37 肺部听诊异常结果描述</span></li>
+                            <li><span class="file" name="heartAuscultationExceptionFlag"  type="value">1.8.38 心脏听诊异常标志</span></li>
+                            <li><span class="file" name="heartAuscultationExceptionResult"  type="value">1.8.39 心脏听诊异常结果描述</span></li>
+                            <li><span class="file" name="vulvaExceptionFlag"  type="value">1.8.40 外阴异常标志</span></li>
+                            <li><span class="file" name="vulvaException"  type="value">1.8.41 外阴异常描述</span></li>
+                            <li><span class="file" name="vaginaExceptionFlag"  type="value">1.8.42 阴道异常标志</span></li>
+                            <li><span class="file" name="vaginaException"  type="value">1.8.43 阴道异常描述</span></li>
+                            <li><span class="file" name="cervixExceptionFlag"  type="value">1.8.44 宫颈异常标志</span></li>
+                            <li><span class="file" name="cervixException"  type="value">1.8.45 宫颈异常描述</span></li>
+                            <li><span class="file" name="uteriCorporaExceptionFlag"  type="value">1.8.46 宫体异常标志</span></li>
+                            <li><span class="file" name="uteriCorporaException"  type="value">1.8.47 宫体异常描述</span></li>
+                            <li><span class="file" name="accessoryExceptionFlag"  type="value">1.8.48 附件异常标志</span></li>
+                            <li><span class="file" name="accessoryException"  type="value">1.8.49 附件异常描述</span></li>
+                            <li><span class="file" name="uteriBottomHeight"  type="value">1.8.50 宫底高度(cm)</span></li>
+                            <li><span class="file" name="circumferenceLength"  type="value">1.8.51 腹围(cm)</span></li>
+                            <li><span class="file" name="fetalPositionID"  type="value">1.8.52 胎方位代码</span></li>
+                            <li><span class="file" name="fetalHeartRateNumber"  type="value">1.8.53 胎心率(次/min〉</span></li>
+                            <li><span class="file" name="hemoglobinValue"  type="value">1.8.54 血红蛋自值(g/L)</span></li>
+                            <li><span class="file" name="whiteCellCountValue"  type="value">1.8.55 白细胞计数值(G/I)</span></li>
+                            <li><span class="file" name="plateletCountValue"  type="value">1.8.56 血小板计数值(G/I')</span></li>
+                            <li><span class="file" name="urinaryProteinQuantitativeCheckValue"  type="value">1.8.57 尿蛋白定量检测值(mg/24h)</span></li>
+                            <li><span class="file" name="urineProteinCheckResultID"  type="value">1.8.58 尿蛋自定性检测结果代码</span></li>
+                            <li><span class="file" name="urineSugarCheckResultID"  type="value">1.8.59 尿糖定性检测结果代码</span></li>
+                            <li><span class="file" name="urineSugarQuantitativeCheckValue"  type="value">1.8.60 尿糖定量检测(mmol/L)</span></li>
+                            <li><span class="file" name="urineKetoneCheckResultID"  type="value">1.8.61 尿酮体定性检测结果代码</span></li>
+                            <li><span class="file" name="UrineOccultBloodCheckID"  type="value">1.8.62 尿潜血检测结果代码</span></li>
+                            <li><span class="file" name="ABOBloodGroupID"  type="value">1.8.63 ABO血型代码</span></li>
+                            <li><span class="file" name="RhBloodGroupID"  type="value">1.8.64 Rh血型代码</span></li>
+                            <li><span class="file" name="bloodGlucoseCheckValues"  type="array">1.8.65 血糖检测值</span></li>
+                            <li><span class="file" name="serumGlutamicPyruvicTransaminaseValue"  type="value">1.8.66 血清谷丙转氨酶值</span></li>
+                            <li><span class="file" name="serumGlutamicOxalaceticTransaminaseValue"  type="value">1.8.67 血清谷草转氨莳值</span></li>
+                            <li><span class="file" name="albuminConcentrationValue"  type="value">1.8.68 白蛋白浓度</span></li>
+                            <li><span class="file" name="totalBilirubinValue"  type="value">1.8.69 总胆红素值</span></li>
+                            <li><span class="file" name="conjugatedBilirubinCheckValue"  type="value">1.8.70 结合胆红素值</span></li>
+                            <li><span class="file" name="UrineNitrogenTurbulenceCheckValue"  type="value">1.8.71 血尿紊氮检测值</span></li>
+                            <li><span class="file" name="serumCreatinineValue"  type="value">1.8.72 血肌酐值(</span></li>
+                            <li><span class="file" name="vaginalSecretionCheckResultID"  type="value">1.8.73 阴道分泌物检查结果代码</span></li>
+                            <li><span class="file" name="vaginalDischargeCleanlinessID"  type="value">1.8.74 阴道分泌物清洁度代码</span></li>
+                            <li><span class="file" name="hepatitisBVirusEAntibodyCheckResultID"  type="value">1.8.75 乙型肝炎病毒e抗体检测结果代码</span></li>
+                            <li><span class="file" name="hepatitisBvirusEAntigenCheckResultID"  type="value">1.8.76 乙型肝炎病毒e抗原检测结果代码</span></li>
+                            <li><span class="file" name="hepatitisBVirusSurfaceAntibodyCheckResultID"  type="value">1.8.77 乙型肝炎病毒表面抗体检测结果代码</span></li>
+                            <li><span class="file" name="hepatitisBVirusSurfaceAntigenCheckResultID"  type="value">1.8.78 乙型肝炎病毒表面抗原检测结果代码</span></li>
+                            <li><span class="file" name="hepatitisBVirusCoreAntibodyCheckResultID"  type="value">1.8.79 乙型肝炎病毒核心抗体检测结果代码</span></li>
+                            <li><span class="file" name="syphilisSerumTestResultID"  type="value">1.8.80 梅毒血清学试验结果代码</span></li>
+                            <li><span class="file" name="HIVAntibodyCheckResultID"  type="value">1.8.81 HIV 抗体检测结果代码</span></li>
+                            <li><span class="file" name="BUltrasonicCheckResultID"  type="value">1.8.82 B超检查结果</span></li>
+                            <li><span class="file" name="maternalHealthAssessmentExceptionFlag"  type="value">1.8.83 孕产妇健康评估异常标志</span></li>
+                            <li><span class="file" name="maternalHealthAssessmentExceptionResult"  type="value">1.8.84 孕产妇健康评估异常结果描述</span></li>
+                            <li><span class="file" name="referralFlag"  type="value">1.8.85 转诊标志</span></li>
+                            <li><span class="file" name="transferMedicalInstitutionName"  type="value">1.8.86 转入医疗机构名称</span></li>
+                            <li><span class="file" name="transferMedicalInstitutionOfficeName"  type="value">1.8.87 转入机构科室名称</span></li>
+                            <li><span class="file" name="referralReason"  type="value">1.8.88 转诊原因</span></li>
+                            <li><span class="file" name="maternalHealthGuidanceType"  type="value">1.8.89 孕产妇健康指导类别代码</span></li>
+                            <li><span class="file" name="visitingDoctorName"  type="value">1.8.90 访视医师姓名</span></li>
+                            <li><span class="file" name="thisVisitDate"  type="value">1.8.91 本次访视日期</span></li>
+                            <li><span class="file" name="nextVisitDate"  type="value">1.8.92 下次访视日期</span></li>
+                            <li><span class="file" name="nextVisitArea"  type="value">1.8.93 下次访视地点</span></li>                  
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="postpartum_visit">1.9 产后访视数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="id"  type="value">1.9.1 本人身份证号</span></li>
+                            <li><span class="file" name="healthrecords_ID"  type="value">1.9.2 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="postpartumVisitRecordFormID"  type="value">1.9.3 产后访视记录表单编号</span></li>
+                            <li><span class="file" name="name"  type="value">1.9.4 本人姓名</span></li>
+                            <li><span class="file" name="visitDate"  type="value">1.9.5 随访日期</span></li>
+                            <li><span class="file" name="tempeture"  type="value">1.9.6 体温(℃)</span></li>
+                            <li><span class="file" name="healthState"  type="value">1.9.7 健康状况详细描述</span></li>
+                            <li><span class="file" name="psychologicalState"  type="value">1.9.8 心理状况详细描述</span></li>
+                            <li><span class="file" name="systolicBloodPressure"  type="value">1.9.9 收缩压(mmHg)</span></li>
+                            <li><span class="file" name="diastolicBloodPressure"  type="value">1.9.10 舒张压(mmHg)</span></li>
+                            <li><span class="file" name="leftBreastCheckResult"  type="value">1.9.11 左侧乳腺检查结果代码</span></li>
+                            <li><span class="file" name="rightBreastCheckResult"  type="value">1.9.12 右侧乳腺检查结果代码</span></li>
+                            <li><span class="file" name="uteriCorporaExceptionFlag"  type="value">1.9.13 宫体异常标志</span></li>
+                            <li><span class="file" name="uteriCorporaException"  type="value">1.9.14 官体异常描述</span></li>
+                            <li><span class="file" name="lochiaExceptionFlag"  type="value">1.9.15 恶露异常标志</span></li>
+                            <li><span class="file" name="badTendonState"  type="value">1.9.16 恶筋状况</span></li>
+                            <li><span class="file" name="woundHealingStateNO"  type="value">1.9.17 伤口愈合状况代码</span></li>
+                            <li><span class="file" name="maternalHealthAssessmentExceptionFlag"  type="value">1.9.18 孕产妇健康评估异常标志</span></li>
+                            <li><span class="file" name="maternalHealthAssessmentExceptionResult"  type="value">1.9.19 孕产妇健康评估异常结果描述</span></li>
+                            <li><span class="file" name="referralFlag"  type="value">1.9.20 转诊标志</span></li>
+                            <li><span class="file" name="referralReason"  type="value">1.9.21 转诊原因</span></li>
+                            <li><span class="file" name="transferMedicalInstitutionName"  type="value">1.9.22 转入医疗机构名称</span></li>
+                            <li><span class="file" name="transferMedicalInstitutionOfficeName"  type="value">1.9.23 转入机构科室名称</span></li>
+                            <li><span class="file" name="maternalHealthGuidanceType"  type="value">1.9.24 孕产妇健康指导类别代码</span></li>
+                            <li><span class="file" name="visitingDoctorName"  type="value">1.9.25 访视医师姓名</span></li>
+                            <li><span class="file" name="nextVisitDate"  type="value">1.9.26 下次访视日期</span></li>
+                         </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="postpartum_42_visit">1.10 产后42天健康检查数据元专用属性</span>
+                   	  <ul>
+                        	<li><span class="file" name="ID_number"  type="value">1.10.1 本人身份证号</span></li>
+                            <li><span class="file" name="healthrecords_ID"  type="value">1.10.2 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="postpartumHealthCheckRecordFormID"  type="value">1.10.3 产后42天健康检查记录表单编号</span></li>
+                            <li><span class="file" name="name"  type="value">1.10.4 本人姓名</span></li>
+                            <li><span class="file" name="visitDate"  type="value">1.10.5 随访日期</span></li>
+                            <li><span class="file" name="healthState"  type="value">1.10.6 健康状况详细描述</span></li>
+                            <li><span class="file" name="psychologicalState"  type="value">1.10.7 心理状况详细描述</span></li>
+                            <li><span class="file" name="systolicBloodPressure"  type="array">1.10.8 收缩压(mmHg)</span></li>
+                            <li><span class="file" name="diastolicBloodPressure"  type="array">1.10.9 舒张压(mm Hg)</span></li>
+                            <li><span class="file" name="leftBreastCheckResult"  type="value">1.10.10 左侧乳腺检查结果代码</span></li>
+                            <li><span class="file" name="rightBreastCheckResult"  type="value">1.10.11 右侧乳腺检查结果代码</span></li>
+                            <li><span class="file" name="uteriCorporaExceptionFlag"  type="value">1.10.12 宫体异常标志</span></li>
+                            <li><span class="file" name="uteriCorporaException"  type="value">1.10.13 宫体异常描述</span></li>
+                            <li><span class="file" name="lochiaExceptionFlag"  type="value">1.10.14 恶露异常标志</span></li>
+                            <li><span class="file" name="lochiaState"  type="value">1.10.15 恶露状况</span></li>
+                            <li><span class="file" name="woundHealingStateID"  type="value">1.10.16 伤口愈合状况代码</span></li>
+                            <li><span class="file" name="maternalRecoveryFlag"  type="value">1.10.17 产妇恢复标志</span></li>
+                            <li><span class="file" name="maternalHealthAssessment"  type="value">1.10.18 产妇健康状况评估描述</span></li>
+                            <li><span class="file" name="maternalHealthGuideTypeID"  type="value">1.10.19 孕产妇健康指导类别代码</span></li>
+                            <li><span class="file" name="closeCaseFlag"  type="value">1.10.20 结案标志</span></li>
+                            <li><span class="file" name="referralFlag"  type="value">1.10.21 转诊标志</span></li>
+                            <li><span class="file" name="referralReason"  type="value">1.10.22 转诊原因</span></li>
+                            <li><span class="file" name="transferMedicalInstitutionName"  type="value">1.10.23 转入医疗机构名称</span></li>
+                            <li><span class="file" name="transferMedicalInstitutionOfficeName"  type="value">1.10.24 转入机构科室名称</span></li>
+                            <li><span class="file" name="visitingDoctorName"  type="value">1.10.25 访视医师姓名</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="vaccination">1.11 预防接种卡数据元专用属性</span>
+						<ul>
+                        	<li><span class="file" name="id_number"  type="value">1.11.1 本人身份证号</span></li>
+                            <li><span class="file" name="heathrecords_ID"  type="value">1.11.2 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="vaccinationCardID"  type="value">1.11.3 预防接种卡编号</span></li>
+                            <li><span class="file" name="evacuationDate"  type="value">1.11.4 迁出日期</span></li>
+                            <li><span class="file" name="evacuationReason"  type="value">1.11.5 迁出原因</span></li>
+                            <li><span class="file" name="moveInDate"  type="value">1.11.6 迁入日期</span></li>
+                            <li><span class="file" name="vaccineAdverseReactionsHistory"  type="value">1.11.7 疫苗异常反应史</span></li>
+                            <li><span class="file" name="vaccinationTaboo"  type="value">1.11.8 接种禁忌</span></li>
+                            <li><span class="file" name="infectionHistory"  type="value">1.11.9 传染病史</span></li>
+                            <li><span class="file" name="vaccineNameID"  type="value">1.11.10 疫苗名称代码</span></li>
+                            <li><span class="file" name="vaccinationDate"  type="value">1.11.11 疫苗接种日期</span></li>
+                            <li><span class="file" name="vaccinationSite"  type="value">1.11.12 接种部位</span></li>
+                            <li><span class="file" name="vaccineNO"  type="value">1.11.13 疫苗批号</span></li>
+                            <li><span class="file" name="inoculumNumber"  type="value">1.11.14 接种剂次</span></li>
+                            <li><span class="file" name="vaccinationDoctorName"  type="value">1.11.15 疫苗接种医生姓名</span></li>
+                            <li><span class="file" name="buildCardName"  type="value">1.11.16 建卡人姓名</span></li>
+                            <li><span class="file" name="buildCardDate"  type="value">1.11.17 建卡日期</span></li>
+                            <li><span class="file" name="vaccinationUnitName"  type="value">1.11.18 疫苗接种单位名称</span></li>
+                            <li><span class="file" name="suspiciousVaccineID"  type="value">1.11.19 引起预防接种后不良反应的可疑疫苗名称代码</span></li>
+                            <li><span class="file" name="adverseReactionsResult"  type="value">1.11.20 预防接种后不良反应处理结果</span></li>
+                            <li><span class="file" name="adverseReactionsDate"  type="value">1.11.21 预防接种后不良反应发生日期</span></li>
+                            <li><span class="file" name="adverseReactionsCheckID"  type="value">1.11.22 预防接种后不良反应临床诊断代码</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="infectious_diseases">1.12 传染病报告卡数据元专用属性</span>
+						<ul>
+                        	<li><span class="file" name="health_record_id"  type="value">1.12.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="infectious_disease_report_card_id"  type="value">1.12.2 传染病报告卡编号</span></li>
+                            <li><span class="file" name="Report_card_type"  type="value">1.12.3 报卡类别代码</span></li>
+                            <li><span class="file" name="user_name"  type="value">1.12.4 本人姓名</span></li>
+                            <li><span class="file" name="parent_name"  type="value">1.12.5 本人姓名</span></li>
+                            <li><span class="file" name="id_type"  type="value">1.12.6 身份证件类别代码</span></li>
+                            <li><span class="file" name="user_id"  type="value">1.12.7 身份证件号码</span></li>
+                            <li><span class="file" name="sex_type"  type="value">1.12.8 身份证件号码</span></li>
+                            <li><span class="file" name="date_of_birth"  type="value">1.12.9 出生日期</span></li>
+                            <li><span class="file" name="company_name"  type="value">1.12.10 工作单位名称</span></li>
+                            <li><span class="file" name="user_phone"  type="value">1.12.11 本人电话号码</span></li>
+                            <li><span class="file" name="family_phone"  type="value">1.12.12 家人电话号码</span></li>
+                            <li><span class="file" name="work_phone"  type="value">1.12.13 工作单位电话号码</span></li>
+                            <li><span class="file" name="address_province"  type="value">1.12.14 现住地址一省(自治区、直辖市)</span></li>
+                            <li><span class="file" name="address_city"  type="value">1.12.15 现住地址-市(地区、州)</span></li>
+                            <li><span class="file" name="Address_county"  type="value">1.12.16 现住地址-县(区)</span></li>
+                            <li><span class="file" name="Address_countryside"  type="value">1.12.17 现住地址-乡(镇、街道办事处)</span></li>
+                            <li><span class="file" name="address_village"  type="value">1.12.19 现住地址村(街、路、等)</span></li>
+                            <li><span class="file" name="Address_number"  type="value">1.12.20 现住地址-门牌号码</span></li>
+                            <li><span class="file" name="Census_register_address_province"  type="value">1.12.21 户籍地址⋯省(自治区,直辖市)</span></li>
+                            <li><span class="file" name="Census_register_address_city"  type="value">1.12.22 户籍地址-市(地区、州)</span></li>
+                            <li><span class="file" name="Census_register_address_county"  type="value">1.12.23 户籍地址-县(区)</span></li>
+                            <li><span class="file" name="Census_register_address_countryside"  type="value">1.12.24 户籍地址-乡(镇、街道办事处)</span></li>
+                            <li><span class="file" name="Census_register_address_village"  type="value">1.12.25 户籍地址村(街、路、弄等)</span></li>
+                            <li><span class="file" name="Census_register_address_number"  type="value">1.12.26 户籍地址-门牌号码</span></li>
+                            <li><span class="file" name="work_address_province"  type="value">1.12.27 工作单位地址-省(自治区、直辖市)</span></li>
+                            <li><span class="file" name="work_address_city"  type="value">1.12.28 工作单位地址-市(地区、州)</span></li>
+                            <li><span class="file" name="work_Address_county"  type="value">1.12.29 工作单位地址-县(区)</span></li>
+                            <li><span class="file" name="work_Address_countryside"  type="value">1.12.30 工作单位地址-乡(镇、街道办事处)</span></li>
+                            <li><span class="file" name="work_address_village"  type="value">1.12.31 工作单位地址-村(街、路、弄等)</span></li>
+                            <li><span class="file" name=work_Address_number""  type="value">1.12.32 工作单位地址-门牌号码</span></li>
+                            <li><span class="file" name="relational_code"  type="value">1.12.33 传染病患者归属代码</span></li>
+                            <li><span class="file" name="occupational_code"  type="value">1.12.34 传染病患者职业代码</span></li>
+                            <li><span class="file" name="first_symptom_date"  type="value">1.12.35 首次出现症状日期</span></li>
+                            <li><span class="file" name="Disease_category_code"  type="value">1.12.36 首次出现症状日期</span></li>
+                            <li><span class="file" name="Diagnostic_status_code"  type="value">1.12.37 诊断状态代码</span></li>
+                            <li><span class="file" name="Diagnostic_date"  type="value">1.12.38 诊断日期</span></li>
+                            <li><span class="file" name="death_date"  type="value">1.12.39 死亡日期</span></li>
+                            <li><span class="file" name="category_code"  type="value">1.12.40 传染病类别代码</span></li>
+                            <li><span class="file" name="Disease_name_code"  type="value">1.12.41 传染病名称代码</span></li>
+                            <li><span class="file" name="Others_name_code"  type="value">1.12.42 其他法定管理以及重点监测传染病名称</span></li>
+                            <li><span class="file" name="Revised_diagnosis"  type="value">1.12.43 订正诊断</span></li>
+                            <li><span class="file" name="Reasons_back_card"  type="value">1.12.44 退卡原因</span></li>
+                            <li><span class="file" name="Doctor_name"  type="value">1.12.45 报告医师姓名</span></li>
+                            <li><span class="file" name="Reporting_agency_name"  type="value">1.12.46 填报机构名称</span></li>
+                            <li><span class="file" name="Agency_phone"  type="value">1.12.47 填报机构电话号码</span></li>
+                            <li><span class="file" name="report_Date"  type="value">1.12.48 填报日期</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="occupational_diseases">1.13 职业病报告卡数据元专用属性</span>
+						<ul>
+                        	<li><span class="file" name="User_name"  type="value">1.13.1 本人姓名</span></li>
+                            <li><span class="file" name="health_record_id"  type="value">1.13.2 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="Occupational_Diseases_id"  type="value">1.13.3 职业病报告卡编号</span></li>
+                            <li><span class="file" name="Sex"  type="value">1.13.4 性别代码</span></li>
+                            <li><span class="file" name="Birth_date"  type="value">1.13.5 出生日期</span></li>
+                            <li><span class="file" name="Id_type"  type="value">1.13.6 身份证件类别代码</span></li>
+                            <li><span class="file" name="User_id"  type="value">1.13.7 身份证件号码</span></li>
+                            <li><span class="file" name="Region_diverse_code"  type="value">1.13.8 行政区划代码</span></li>
+                            <li><span class="file" name="Education_code"  type="value">1.13.9 学历代码</span></li>
+                            <li><span class="file" name="Corporate_name"  type="value">1.13.10 工作单位名称</span></li>
+                            <li><span class="file" name="Occupational_Description_code"  type="value">1.13.11 从事职业工种描述</span></li>
+                            <li><span class="file" name="exposure_History"  type="value">1.13.12 受照史</span></li>
+                            <li><span class="file" name="Exposure_type"  type="value">1.13.13 职业照射种类代码</span></li>
+                            <li><span class="file" name="Radio_starttime"  type="value">1.13.14 开始从事放射工作日期</span></li>
+                            <li><span class="file" name="Dust_starttime"  type="value">1.13.15 开始接尘日期</span></li>
+                            <li><span class="file" name="Actual_exposure_year"  type="value">1.13.16 实际接害工龄(a)</span></li>
+                            <li><span class="file" name="radio_year"  type="value">1.13.17 放射工龄(a)</span></li>
+                            <li><span class="file" name="Radio_sum_time"  type="value">1.13.18 累积受照时长(h/a)</span></li>
+                            <li><span class="file" name="Exposure_sum_time"  type="value">1.13.19 受照日期</span></li>
+                            <li><span class="file" name="First_symptom_date"  type="value">1.13.20 首次出现症状日期</span></li>
+                            <li><span class="file" name="Exposure_dose"  type="value">1.13.21 受照剂量(Gy)</span></li>
+                            <li><span class="file" name="Radio_type"  type="value">1.13.22 受照类型代码</span></li>
+                            <li><span class="file" name="Radio_reason"  type="value">1.13.23 受照原因代码</span></li>
+                            <li><span class="file" name="Occupational_disease_type"  type="value">1.13.24 职业病种类代码</span></li>
+                            <li><span class="file" name="Pneumoconiosis_type"  type="value">1.13.25 尘肺类别代码</span></li>
+                            <li><span class="file" name="Pneumoconiosis_stage_type"  type="value">1.13.26 尘肺期别代码</span></li>
+                            <li><span class="file" name="Occupational_disease_name"  type="value">1.13.27 职业病名称代码</span></li>
+                            <li><span class="file" name="Occupational_disease_rating"  type="value">1.13.28 职业病伤残等级代码</span></li>
+                            <li><span class="file" name="Occupational_disease_outcome"  type="value">1.13.29 职业病转归代码</span></li>
+                            <li><span class="file" name="Occupational_radiation_sickness"  type="value">1.13.30 职业性放射性疾病代码</span></li>
+                            <li><span class="file" name="Radiation_sickness_degree"  type="value">1.13.31 放射性疾病的分度代码</span></li>
+                            <li><span class="file" name="Radioactive_disease_stage"  type="value">1.13.32 放射性疾病的分期代码</span></li>
+                            <li><span class="file" name="Pneumoconiosis_pulmonary_type"  type="value">1.13.33 尘肺合并肺结核的标志</span></li>
+                            <li><span class="file" name="Occupational_radiation_sickness_treatment_code"  type="value">1.13.34 职业性放射性疾病处理类别代码</span></li>
+                            <li><span class="file" name="Death_date"  type="value">1.13.35 死亡日期时间</span></li>
+                            <li><span class="file" name="Real_death_code"  type="value">1.13.36 根本死因代码</span></li>
+                            <li><span class="file" name="Break_organization_name"  type="value">1.13.37 诊断机构名称</span></li>
+                            <li><span class="file" name="Diagnostic_date"  type="value">1.13.38 诊断日期时间</span></li>
+                            <li><span class="file" name="Diagnostic_doctor"  type="value">1.13.39 诊断医师姓名</span></li>
+                            <li><span class="file" name="Reporting_agency_name"  type="value">1.13.40 填报机构名称</span></li>
+                            <li><span class="file" name="Reporting_user_name"  type="value">1.13.41 填报人姓名</span></li>
+                            <li><span class="file" name="Reporting_date"  type="value">1.13.42 填报日期时间</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="foodborne_diseases">1.14 食源性疾病报告卡数据元专用属性 </span>
+						<ul>
+                        	<li><span class="file" name="Health_record_id"  type="value">1.14.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="User_name"  type="value">1.14.2 本人姓名</span></li>
+                            <li><span class="file" name="Food_abnormality_code"  type="value">1.14.3 疑似食源性异常病例(健康事件)撇告卡编号</span></li>
+                            <li><span class="file" name="Disease_starttime"  type="value">1.14.4 发病目期时间</span></li>
+                            <li><span class="file" name="Treatment_date"  type="value">1.14.5 就诊日期时间</span></li>
+                            <li><span class="file" name="Symptom_name"  type="value">1.14.6 症状名称</span></li>
+                            <li><span class="file" name="Symptom_code"  type="value">1.14.7 症状代码</span></li>
+                            <li><span class="file" name="Description_body"  type="value">1.14.8 体征描述</span></li>
+                            <li><span class="file" name="Test_results"  type="value">1.14.9 实验室检查结果</span></li>
+                            <li><span class="file" name="Auxiliary_examination_results"  type="value">1.14.10 辅助检查结果</span></li>
+                            <li><span class="file" name="Diagnosis_result"  type="value">1.14.11 诊断结果</span></li>
+                            <li><span class="file" name="Food_abnormality_Diagnosis_code"  type="value">1.14.12 疑似食源性异常病例(健康事件)可疑病因代码</span></li>
+                            <li><span class="file" name="Food_abnormality_name"  type="value">1.14.13 可疑食品名称</span></li>
+                            <li><span class="file" name="Food_abnormality_Diagnosis_report_code"  type="value">1.14.14 疑似食源性异常病例(健康事件)报告卡上报原因代码</span></li>
+                            <li><span class="file" name="Reporting_agency_name"  type="value">1.14.15 填报机构名称</span></li>
+                            <li><span class="file" name="Reporting_name"  type="value">1.14.16 填报人姓名</span></li>
+                            <li><span class="file" name="Reporting_date"  type="value">1.14.17 填报日期</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="hypertension_records">1.15 高血压患者随访数据元专用属性</span>
+						<ul>
+                        	<li><span class="file" name="Health_record_id" type="value">1.15.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="Hypertension_id" type="value">1.15.2 高血压患者随访服务记录表编号</span></li>
+                            <li><span class="file" name="User_name" type="value">1.15.3 本人姓名</span></li>
+                            <li><span class="file" name="Responsible_doctor" type="value">1.15.4 责任医师姓名</span></li>
+                            <li><span class="file" name="follow_date" type="value">1.15.5 本次随访日期</span></li>
+                            <li><span class="file" name="Follow_type" type="value">1.15.6 随访方式代码</span></li>
+                            <li><span class="file" name="Symptom_code" type="value">1.15.7 症状代码</span></li>
+                            <li><span class="file" name="Symptom_code" type="value">1.15.8 症状名称</span></li>
+                            <li><span class="file" name="Systolic_pressure" type="array">1.15.9 收缩压(mmHg)</span></li>
+                            <li><span class="file" name="Diastolic_pressure" type="array">1.15.10 舒张压(mmHg)</span></li>
+                            <li><span class="file" name="weight" type="array">1.15.11 体重(kg)</span></li>
+                            <li><span class="file" name="Target_weight" type="value">1.15.12 目标体重(kg)</span></li>
+                            <li><span class="file" name="height" type="value">1.15.13 身高(cm)</span></li>
+                            <li><span class="file" name="Constitutional_index" type="array">1.15.14 体质指数</span></li>
+                            <li><span class="file" name="Target_Constitutional_index" type="value">1.15.15 目标体质指数</span></li>
+                            <li><span class="file" name="Heart_rate" type="value">1.15.16 心率(次/min)</span></li>
+                            <li><span class="file" name="Other_positive_signs" type="value">1.15.17 其他阳性体征</span></li>
+                            <li><span class="file" name="Daily_smoking_quantity" type="array">1.15.18 日吸烟量(支)</span></li>
+                            <li><span class="file" name="target_Daily_smoking_quantity" type="value">1.15.19 目标日吸烟量(支)</span></li>
+                            <li><span class="file" name="Daily_alcohol_consumption" type="array">1.15.20 日饮酒量(两)</span></li>
+                            <li><span class="file" name="Target_Daily_alcohol_consumption" type="value">1.15.21 目标日饮酒量(两)</span></li>
+                            <li><span class="file" name="Target_Daily_alcohol_consumption" type="value">1.15.22 运动频率代码</span></li>
+                            <li><span class="file" name="Standard_motion_frequency_code" type="value">1.15.23 目标运动频率代码</span></li>
+                            <li><span class="file" name="Sports_time" type="array">1.15.24 运动时长(min)</span></li>
+                            <li><span class="file" name="Target_Sports_time" type="value">1.15.25 目标运动时长(min)</span></li>
+                            <li><span class="file" name="Salt_uptake_grading_code" type="value">1.15.26 摄盐量分级代码</span></li>
+                            <li><span class="file" name="target_Salt_uptake_grading_code" type="value">1.15.27 目标摄盐量分级代码</span></li>
+                            <li><span class="file" name="Psychological_adjustment_result_code" type="value">1.15.28 心理调整评价结果代码</span></li>
+                            <li><span class="file" name="Behavior_evaluation_code" type="value">1.15.29 随访遵医行为评价结果代码</span></li>
+                            <li><span class="file" name="Auxiliary_inspection_item" type="value">1.15.30 辅助检查项目 </span></li>
+                            <li><span class="file" name="Auxiliary_examination_results" type="value">1.15.31 辅助检查结果</span></li>
+                            <li><span class="file" name="Check_person_name" type="value">1.15.32 检查(测)人员姓名</span></li>
+                            <li><span class="file" name="Check_person_name" type="value">1.15.33 检查(测)日期</span></li>
+                            <li><span class="file" name="Medication_compliance_code" type="value">1.15.34 服药依从性代码</span></li>
+                            <li><span class="file" name="Dverse_drug_reaction_sign" type="value">1.15.35 药物不良反应标志</span></li>
+                            <li><span class="file" name="Dverse_drug_reaction_desc" type="value">1.15.36 药物不良反应描述</span></li>
+                            <li><span class="file" name="Follow_result_code" type="value">1.15.37 随访评价结果代码</span></li>
+                            <li><span class="file" name="Chinese_medicine_category_code" type="value">1.15.38 中药类别代码</span></li>
+                            <li><span class="file" name="Drug_name" type="value">1.15.39 药物名称</span></li>
+                            <li><span class="file" name="Drug_use_frequency" type="value">1.15.40 药物使用频率</span></li>
+                            <li><span class="file" name="Drug_use_dosage_unit" type="value">1.15.41 药物使用剂量单位</span></li>
+                            <li><span class="file" name="Dose_drug_use" type="value">1.15.42 药物使用次剂量</span></li>
+                            <li><span class="file" name="Total_drug_use" type="value">1.15.43 药物使用总剂量</span></li>
+                            <li><span class="file" name="Drug_use_pathway_code" type="value">1.15.44 药物使用途径代码</span></li>
+                            <li><span class="file" name="Referral_Reasons" type="value">1.15.45 转诊原因</span></li>
+                            <li><span class="file" name="Medical_institution" type="value">1.15.46 转入医疗机构名称</span></li>
+                            <li><span class="file" name="Department_of_human_body" type="value">1.15.47 转入机构科室名称</span></li>
+                            <li><span class="file" name="Next_follow-up_date" type="value">1.15.48 下次随访日期</span></li>
+                            <li><span class="file" name="follow_up_doctor" type="value">1.15.49 随访医师姓名</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="diabetes_2">1.16 2型糖尿病患者随访数据元专用属性</span>
+						<ul>
+                        	<li><span class="file" name="Health_record_id" data_type="value">1.16.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="diabetes2_Record_code" type="value">1.16.2 2型糖尿病患者随访服务记录表编号</span></li>
+                            <li><span class="file" name="User_name" type="value">1.16.3 本人姓名</span></li>
+                            <li><span class="file" name="Main_Doctor_name" type="value">1.16.4 责任医师姓名</span></li>
+                            <li><span class="file" name="Follow_type" type="value">1.16.5 随访方式代码</span></li>
+                            <li><span class="file" name="Follow_date" type="value">1.16.6 本次随访日期</span></li>
+                            <li><span class="file" name="Symptom_code" type="value">1.16.7 症状代码</span></li>
+                            <li><span class="file" name="Symptom_name" type="value">1.16.8 症状名称</span></li>
+                            <li><span class="file" name="Systolic_pressure" type="array">1.16.9 收缩压(mmHg)</span></li>
+                            <li><span class="file" name="Diastolic_pressure" type="array">1.16.10 舒张压(mmHg)</span></li>
+                            <li><span class="file" name="weight" type="array">1.16.11 体重(kg)</span></li>
+                            <li><span class="file" name="Target_weight" type="value">1.16.12 目标体重(kg)</span></li>
+                            <li><span class="file" name="height" type="value">1.16.13 身高(cm)</span></li>
+                            <li><span class="file" name="Constitutional_index" type="array">1.16.14 体质指数</span></li>
+                            <li><span class="file" name="Target_Constitutional_index" type="value">1.16.15 目标体质指数</span></li>
+                            <li><span class="file" name="Dorsal_digital_artery" type="value">1.16.16 足背动脉搏动标志</span></li>
+                            <li><span class="file" name="Other_positive_signs" type="value">1.16.17 其他阳性体征</span></li>
+                            <li><span class="file" name="Daily_smoking_quantity" type="array">1.16.18 日吸烟量(支)</span></li>
+                            <li><span class="file" name="target_Daily_smoking_quantity" type="value">1.16.19 目标日吸烟垦(支)</span></li>
+                            <li><span class="file" name="Daily_alcohol_consumption" type="value">1.16.20 目标日吸烟垦(支)</span></li>
+                            <li><span class="file" name="Target_Daily_alcohol_consumption" type="value">1.16.21 目标日饮酒量(两)</span></li>
+                            <li><span class="file" name="Motion_frequency_code" type="value">1.16.22 运动频率代码</span></li>
+                            <li><span class="file" name="Standard_motion_frequency_code" type="value">1.16.23 目标运动频率代码</span></li>
+                            <li><span class="file" name="Sports_time" type="array">1.16.24 运动时长(min)</span></li>
+                            <li><span class="file" name="Target_Sports_time" type="value">1.16.25 目标运动时长(min)</span></li>
+                            <li><span class="file" name="Daily_feed_intake" type="array">1.16.26 日主食量(g)</span></li>
+                            <li><span class="file" name="Target_daily_feed_intake" type="value">1.16.27 目标日主食量(g)</span></li>
+                            <li><span class="file" name="Psychological_result_code" type="value">1.16.28 心理调整评价结果代码</span></li>
+                            <li><span class="file" name="Follow_result_code" type="value">1.16.29 随访遵医行为评价结果代码</span></li>
+                            <li><span class="file" name="Fasting_blood_sugar" type="array">1.16.30 空腹血糖值(mmol/L)</span></li>
+                            <li><span class="file" name="Two_hours_after_meal_blood_glucose" type="array">1.16.31 饭后两小时血糖值(mmol/L)</span></li>
+                            <li><span class="file" name="Value_of_blood_red_egg" type="array">1.16.32 糖化血红蛋自值(%)</span></li>
+                            <li><span class="file" name="Auxiliary_inspection_item" type="value">1.16.33 辅助检查项目</span></li>
+                            <li><span class="file" name="Auxiliary_examination_results" type="value">1.16.34 辅助检查结果</span></li>
+                            <li><span class="file" name="Examination_name" type="value">1.16.35 检查(测)人员姓名</span></li>
+                            <li><span class="file" name="Examination_date" type="value">1.16.36 检查(测)日期</span></li>
+                            <li><span class="file" name="Medication_compliance_code" type="value">1.16.37 服药依从性代码</span></li>
+                            <li><span class="file" name="Adverse_drug_reaction_sign" type="value">1.16.38 药物不良反应标志</span></li>
+                            <li><span class="file" name="Adverse_drug_reaction_desc" type="value">1.16.39 药物不良反应描述</span></li>
+                            <li><span class="file" name="Low_blood_sugar_response_code" type="value">1.16.40 低血糖反应代码</span></li>
+                            <li><span class="file" name="Follow_evaluation_result_code" type="value">1.16.41 随访评价结果代码</span></li>
+                            <li><span class="file" name="Chinese_medicine_category_code" type="value">1.16.42 中药类别代码</span></li>
+                            <li><span class="file" name="Drug_name" type="value">1.16.43 药物名称</span></li>
+                            <li><span class="file" name="Drug_use_frequency" type="value">1.16.44 药物使用频率</span></li>
+                            <li><span class="file" name="Drug_use_dosage_unit" type="value">1.16.45 药物使用剂量单位</span></li>
+                            <li><span class="file" name="Dose_of_drug_use" type="value">1.16.46 药物使用次剂量</span></li>
+                            <li><span class="file" name="Dose_of_drug_use_total" type="value">1.16.47 药物使用总剂量</span></li>
+                            <li><span class="file" name="Drug_use_pathway_code" type="value">1.16.48 药物使用途径代码</span></li>
+                            <li><span class="file" name="Insulin_type" type="value">1.16.49 胰岛素用药种类</span></li>
+                            <li><span class="file" name="Insulin_frequency" type="value">1.16.50 胰岛素用药使用频率(次/d)</span></li>
+                            <li><span class="file" name="Insulin_Dosage" type="value">1.16.51 胰岛素用药次剂量(U)</span></li>
+                            <li><span class="file" name="Referral_reason" type="value">1.16.52 转诊原因</span></li>
+                            <li><span class="file" name="Medical_institution" type="value">1.16.53 转人医疗机构名称</span></li>
+                            <li><span class="file" name="Institution_Department" type="value">1.16.54 转人机构科室名称</span></li>
+                            <li><span class="file" name="Next_follow_time" type="value">1.16.55 下次随访日期</span></li>
+                            <li><span class="file" name="Follow_doctor_name" type="value">1.16.56 随访医师姓名</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="mental_patient_information">1.17 重性精神疾病患者管理数据据元专用属性</span>
+						<ul>
+                        	<li><span class="file" name="healthrecords_ID" type="value">1.17.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="serious_patient_supplemental_table_ID" type="value">1.17.2 重性精神疾病患者个人信息补充表编号</span></li>
+                            <li><span class="file" name="serious_patient_follow_up_services_record_ID" type="value">1.17.3 重性精神疾病患者随访服务记录表编号</span></li>
+                            <li><span class="file" name="identity_card_ID" type="value">1.17.4 监护人身份证号</span></li>
+                            <li><span class="file" name="neighborhood_committee_name" type="value">1.17.5 居委会名称</span></li>
+                            <li><span class="file" name="neighborhood_committee_contact" type="value">1.17.6 居委会联系人姓名</span></li>
+                            <li><span class="file" name="neighborhood_committee_contact_tel_type" type="value">1.17.7 居委会联系人电话类别</span></li>
+                            <li><span class="file" name="neighborhood_committee_contact_tel" type="value">1.17.8 居委会联系人电话号码</span></li>
+                            <li><span class="file" name="doctor_name" type="value">1.17.9 责任医师姓名</span></li>
+                            <li><span class="file" name="agree_sign" type="value">1.17.10 知情同意管理标志</span></li>
+                            <li><span class="file" name="agree_sign_name" type="value">1.17.11 知情同意签字人姓名</span></li>
+                            <li><span class="file" name="agree_sign_nam" type="value">1.17.12 知情同意签字日期</span></li>
+                            <li><span class="file" name="serious_patient_first_onset_age" type="value">1.17.13 重性精神疾病患者首次发病年龄(岁)</span></li>
+                            <li><span class="file" name="symptom_code" type="value">1.17.14 精神症状代码</span></li>
+                            <li><span class="file" name="past_treatment_code" type="value">1.17.15 既往门诊治疗情况代码</span></li>
+                            <li><span class="file" name="first_treatment_DATE" type="value">1.17.16 首次抗精神病药治疗日期</span></li>
+                            <li><span class="file" name="times_of_hospitalization" type="value">1.17.17 既往精神专科住院次数</span></li>
+                            <li><span class="file" name="serious_mental_disease_code" type="value">1.17.18 重性精神疾病名称代码</span></li>
+                            <li><span class="file" name="diagnosis_medical_institution" type="value">1.17.19 确诊医疗机构名称</span></li>
+                            <li><span class="file" name="diagnosis_DATE" type="value">1.17.20 确诊日期</span></li>
+                            <li><span class="file" name="past_treatment_effect_code" type="value">1.17.21 既往治疗效果类别代码</span></li>
+                            <li><span class="file" name="to_influence_of_the_social" type="value">1.17.22 患病对家庭社会的影响类别代码</span></li>
+                            <li><span class="file" name="time_to_influence_of_the_social" type="value">1.17.23 患病对家庭社会的影响次数(次)</span></li>
+                            <li><span class="file" name="captivity_state_code" type="value">1.17.24 关锁情况代码</span></li>
+                            <li><span class="file" name="economy_state_code" type="value">1.17.25 经济状况代码</span></li>
+                            <li><span class="file" name="medical_advice" type="value">1.17.26 专科医生意见</span></li>
+                            <li><span class="file" name="informant_name" type="value">1.17.27 填报人姓名</span></li>
+                            <li><span class="file" name="report_DATE" type="value">1.17.28 填报日期</span></li>
+                            <li><span class="file" name="visit_DATE" type="value">1.17.29 本次随访日期</span></li>
+                            <li><span class="file" name="user_name" type="value">1.17.30 本人姓名</span></li>
+                            <li><span class="file" name="danger_leve" type="value">1.17.31 危险性分级代码</span></li>
+                            <li><span class="file" name="Selfconciousness_evaluation_code" type="value">1.17.32 自知力评价结果代码</span></li>
+                            <li><span class="file" name="sleep_quality_code" type="value">1.17.33 睡眠情况代码</span></li>
+                            <li><span class="file" name="diet_situations_code" type="value">1.17.34 饮食情况代码</span></li>
+                            <li><span class="file" name="social_function_code" type="value">1.17.35 社会功能情况分类代码</span></li>
+                            <li><span class="file" name="socialfunction_evaluation_code" type="value">1.17.36 社会功能情况评价代码</span></li>
+                            <li><span class="file" name="hospitalization_code" type="value">1.17.37 住院情况代码</span></li>
+                            <li><span class="file" name="discharge_from_hospita_DATE" type="value">1.17.38 本次出院日期</span></li>
+                            <li><span class="file" name="auxiliary_examination_sign" type="value">1.17.39 辅助检查标志</span></li>
+                            <li><span class="file" name="auxiliary_examination_project" type="value">1.17.40 辅助检查项目</span></li>
+                            <li><span class="file" name="auxiliary_examination_result" type="value">1.17.41 辅助检查结果</span></li>
+                            <li><span class="file" name="inspector_name" type="value">1.17.42 检查(测)人员姓名</span></li>
+                            <li><span class="file" name="inspect_DATE" type="value">1.17.43 检查(测)日期</span></li>
+                            <li><span class="file" name="drug_compliance_code" type="value">1.17.44 服药依从性代码</span></li>
+                            <li><span class="file" name="adverse_drug_reactions_sign" type="value">1.17.45 药物不良反应标志</span></li>
+                            <li><span class="file" name="adverse_drug_reactions_desc" type="value">1.17.46 药物不良反应描述</span></li>
+                            <li><span class="file" name="referral_sign" type="value">1.17.47 转诊标志</span></li>
+                            <li><span class="file" name="referral_reason" type="value">1.17.48 转诊原因</span></li>
+                            <li><span class="file" name="referral_medicalinstitution_name" type="value">1.17.49 转入医疗机构名称</span></li>
+                            <li><span class="file" name="referral_department_name" type="value">1.17.50 转入机构科室名称</span></li>
+                            <li><span class="file" name="traditional_chinese_medicine_category_code" type="value">1.17.51 中药类别代码</span></li>
+                            <li><span class="file" name="drug_name" type="value">1.17.52 药物名称</span></li>
+                            <li><span class="file" name="drup_consumptio" type="value">1.17.53 药物使用频率</span></li>
+                            <li><span class="file" name="drug_dose_unit" type="value">1.17.54 药物使用剂量单位</span></li>
+                            <li><span class="file" name="drup_use_frequency" type="value">1.17.55 药物使用剂量单位</span></li>
+                            <li><span class="file" name="drug_total_dose" type="value">1.17.56 药物使用总剂量</span></li>
+                            <li><span class="file" name="access_to_drug_code" type="value">1.17.57 药物使用途径代码</span></li>
+                            <li><span class="file" name="mental_recovery_measure_code" type="value">1.17.58 精神康复措施代码</span></li>
+                            <li><span class="file" name="recovery_measure_guidliance" type="value">1.17.59 康复措施指导</span></li>
+                            <li><span class="file" name="serious_patient_is_visited_sign" type="value">1.17.60 重性精神疾病患者访到标志</span></li>
+                            <li><span class="file" name="serious_patient_visited_result_code" type="value">1.17.61 重性精神疾病患者随访评价结果代码</span></li>
+                            <li><span class="file" name="next_visit_time" type="value">1.17.62 下次随访日期</span></li>
+                            <li><span class="file" name="next_visit_doctor_name" type="value">1.17.63 随访医师姓名</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="outpatient_information">1.18 门诊摘要信息数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="health_record_ID" type="value">1.18.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="patient_recode_ID" type="value">1.18.2 门诊记录表编号</span></li>
+                            <li><span class="file" name="identity_card_ID" type="value">1.18.3 本人身份证号</span></li>
+                            <li><span class="file" name="hospital_name" type="value">1.18.4 就诊机构名称</span></li>
+                            <li><span class="file" name="hospital_code" type="value">1.18.5 就诊机构代码</span></li>
+                            <li><span class="file" name="treatment_department_name" type="value">1.18.6 就诊科室名称</span></li>
+                            <li><span class="file" name="treatment_DATE" type="value">1.18.7 就诊日期时间</span></li>
+                            <li><span class="file" name="consult" type="value">1.18.8 咨询问题</span></li>
+                            <li><span class="file" name="health_services_requirement" type="value">1.18.9 卫生服务要求</span></li>
+                            <li><span class="file" name="symptom_name" type="value">1.18.10 症状名称</span></li>
+                            <li><span class="file" name="symptom_code" type="value">1.18.11 症状代码</span></li>
+                            <li><span class="file" name="DATE_of_onset" type="value">1.18.12 发病日期时间</span></li>
+                            <li><span class="file" name="duration_of_symptoms" type="value">1.18.13 症状持续时间</span></li>
+                            <li><span class="file" name="check_type" type="value">1.18.14 检查/检验类别</span></li>
+                            <li><span class="file" name="check_item_name" type="value">1.18.15 检查/检验项目名称</span></li>
+                            <li><span class="file" name="check_item_code" type="value">1.18.16 检查/检验项目代码</span></li>
+                            <li><span class="file" name="check_result_code" type="value">1.18.17 检查/检验结果代码</span></li>
+                            <li><span class="file" name="check_result" type="value">1.18.18 检查/检验定筮结果</span></li>
+                            <li><span class="file" name="unit_of_measurement" type="value">1.18.19 检查/检验计童单位</span></li>
+                            <li><span class="file" name="clinic_diagnosis_name" type="value">1.18.20 门诊诊断名称</span></li>
+                            <li><span class="file" name="clinic_diagnosis_code" type="value">1.18.21 门诊诊断代码</span></li>
+                            <li><span class="file" name="clinic_diagnosis_DATE" type="value">1.18.22 诊断日期</span></li>
+                            <li><span class="file" name="Health_assessment" type="value">1.18.23 健康问题评估</span></li>
+                            <li><span class="file" name="plan_of_dispose" type="value">1.18.24 处置计划</span></li>
+                            <li><span class="file" name="traditional_chinese_medicine_category_code" type="value">1.18.25 中药类别代码</span></li>
+                            <li><span class="file" name="drug_type" type="value">1.18.26 药物类型</span></li>
+                            <li><span class="file" name="drug_name" type="value">1.18.27 药物名称</span></li>
+                            <li><span class="file" name="drug_dose_type" type="value">1.18.28 药物剂型代码</span></li>
+                            <li><span class="file" name="days_of_use_drug" type="value">1.18.29 用药天数</span></li>
+                            <li><span class="file" name="drup_consumption" type="value">1.18.30 药物使用频率</span></li>
+                            <li><span class="file" name="drug_dose_unit" type="value">1.18.31 药物使用剂量单位</span></li>
+                            <li><span class="file" name="drup_use_frequency" type="value">1.18.32 药物使用次剂量</span></li>
+                            <li><span class="file" name="drug_total_dose" type="value">1.18.33 药物使用总剂量</span></li>
+                            <li><span class="file" name="access_to_drug_code" type="value">1.18.34 药物使用途径代码</span></li>
+                            <li><span class="file" name="DATE_of_end_drug" type="value">1.18.35 用药停止日期时间</span></li>
+                            <li><span class="file" name="operation_name" type="value">1.18.36 手术/操作名称</span></li>
+                            <li><span class="file" name="operation_code" type="value">1.18.37 手术/操作代码</span></li>
+                            <li><span class="file" name="operation_DATE" type="value">1.18.38 手术/操作日期时间</span></li>
+                            <li><span class="file" name="other_dispose" type="value">1.18.39 其他医学处置</span></li>
+                            <li><span class="file" name="referral_sign" type="value">1.18.40 转诊标志</span></li>
+                            <li><span class="file" name="referral_out_hospital_name" type="value">1.18.41 转出医疗机构名称</span></li>
+                            <li><span class="file" name="referral_out_hospital_code" type="value">1.18.42 转出医疗机构代码</span></li>
+                            <li><span class="file" name="referral_out_department_name" type="value">1.18.43 转出医疗机构科室名称</span></li>
+                            <li><span class="file" name="referral_medicalinstitution_name" type="value">1.18.44 转入医疗机构名称</span></li>
+                            <li><span class="file" name="referral_medicalinstitution_code" type="value">1.18.45 转入医疗机构代码</span></li>
+                            <li><span class="file" name="referral_department_name" type="value">1.18.46 转入机构科室名称</span></li>
+                            <li><span class="file" name="referral_record" type="value">1.18.47 转诊记录</span></li>
+                            <li><span class="file" name="referral_DATE" type="value">1.18.48 转诊日期</span></li>
+                            <li><span class="file" name="referral_reason" type="value">1.18.49 转诊原因</span></li>
+                            <li><span class="file" name="physician_name" type="value">1.18.50 责任医师姓名</span></li>
+                            <li><span class="file" name="treatment_scheme" type="value">1.18.51 治疗方案</span></li>
+                            <li><span class="file" name="recovery_measure_guidliance" type="value">1.18.52 康复措施指导</span></li>
+                            <li><span class="file" name="fee_outpatient_type_name" type="value">1.18.53 门诊费用分类名称</span></li>
+                            <li><span class="file" name="fee_outpatient_type_code" type="value">1.18.54 门诊费用分类代码</span></li>
+                            <li><span class="file" name="fee_outpatient" type="value">1.18.55 门诊费用金额</span></li>
+                            <li><span class="file" name="payment_method" type="value">1.18.56 医疗付款方式代码</span></li>
+                            <li><span class="file" name="means_of_payment_fee" type="value">1.18.57 门诊费用结算方式代码</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="hospitalization_information">1.19 住院信息摘要数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="health_record_ID" type="value">1.19.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="case_number" type="value">1.19.2 病案号</span></li>
+                            <li><span class="file" name="identity_card_ID" type="value">1.19.3 本人身份证号</span></li>
+                            <li><span class="file" name="hospital_name" type="value">1.19.4 住院机构名称</span></li>
+                            <li><span class="file" name="hospital_code" type="value">1.19.5 住院机构代码</span></li>
+                            <li><span class="file" name="hospitalized_department_name" type="value">1.19.6 入院科室名称</span></li>
+                            <li><span class="file" name="hospitalized_DATE" type="value">1.19.7 入院日期时间</span></li>
+                            <li><span class="file" name="hospitalized_reason_code" type="value">1.19.8 住院原因代码</span></li>
+                            <li><span class="file" name="symptom_name" type="value">1.19.9 症状名称</span></li>
+                            <li><span class="file" name="symptom_code" type="value">1.19.10 症状代码</span></li>
+                            <li><span class="file" name="DATE_of_onset" type="value">1.19.11 发病日期时间</span></li>
+                            <li><span class="file" name="check_type" type="value">1.19.12 检查/检验类别</span></li>
+                            <li><span class="file" name="check_item_name" type="value">1.19.13 检查/检验项目名称</span></li>
+                            <li><span class="file" name="check_item_code" type="value">1.19.14 检查/检验项目代码</span></li>
+                            <li><span class="file" name="check_result_code" type="value">1.19.15 检查/检验结果代码</span></li>
+                            <li><span class="file" name="check_result" type="value">1.19.16 检查/检验定量结果</span></li>
+                            <li><span class="file" name="unit_of_measurement" type="value">1.19.17 检查/检验计量单位</span></li>
+                            <li><span class="file" name="hospitalized_diagnosis_name" type="value">1.19.18 入院诊断名称</span></li>
+                            <li><span class="file" name="hospitalized_diagnosis_code" type="value">1.19.19 入院诊断代码</span></li>
+                            <li><span class="file" name="consultation_record_ID" type="value">1.19.20 会诊记录表编号</span></li>
+                            <li><span class="file" name="consultation_hospital_name" type="value">1.19.21 会诊所在医疗卫生机构名称</span></li>
+                            <li><span class="file" name="consultation_hospital_code" type="value">1.19.22 会诊所在医疗卫生机构代码</span></li>
+                            <li><span class="file" name="consultation_DATE" type="value">1.19.23 会诊日期</span></li>
+                            <li><span class="file" name="consultation_reason" type="value">1.19.24 会诊原因</span></li>
+                            <li><span class="file" name="consultation_comment" type="value">1.19.25 会诊意见</span></li>
+                            <li><span class="file" name="consultation_physician" type="value">1.19.26 会诊医师姓名</span></li>
+                            <li><span class="file" name="physician_name" type="value">1.19.27 责任医师姓名</span></li>
+                            <li><span class="file" name="diagnosis_DATE" type="value">1.19.28 确诊日期</span></li>
+                            <li><span class="file" name="patient_infection_sign" type="value">1.19.29 住院者传染性标志</span></li>
+                            <li><span class="file" name="patient_disease_status_code" type="value">1.19.30 住院者疾病状态代码</span></li>
+                            <li><span class="file" name="traditional_chinese_medicine_category_code" type="value">1.19.31 中药类别代码</span></li>
+                            <li><span class="file" name="drug_type" type="value">1.19.32 药物类型</span></li>
+                            <li><span class="file" name="drug_name" type="value">1.19.33 药物名称</span></li>
+                            <li><span class="file" name="drug_dose_type" type="value">1.19.34 药物剂型代码</span></li>
+                            <li><span class="file" name="days_of_use_drug" type="value">1.19.35 用药天数</span></li>
+                            <li><span class="file" name="drup_consumption" type="value">1.19.36 药物使用频率</span></li>
+                            <li><span class="file" name="drug_dose_unit" type="value">1.19.37 药物使用剂量单位</span></li>
+                            <li><span class="file" name="drup_use_frequency" type="value">1.19.38 药物使用次剂量</span></li>
+                            <li><span class="file" name="drug_total_dose" type="value">1.19.39 药物使用总剂量</span></li>
+                            <li><span class="file" name="access_to_drug_code" type="value">1.19.40 药物使用途径代码</span></li>
+                            <li><span class="file" name="DATE_of_end_drug" type="value">1.19.41 用药停止日期时间</span></li>
+                            <li><span class="file" name="operation_name" type="value">1.19.42 手术/操作名称</span></li>
+                            <li><span class="file" name="operation_code" type="value">1.19.43 手术/操作代码</span></li>
+                            <li><span class="file" name="operation_DATE" type="value">1.19.44 手术/操作日期时间</span></li>
+                            <li><span class="file" name="methods_of_anesthesia_code" type="value">1.19.45 麻醉方法代码</span></li>
+                            <li><span class="file" name="other_dispose" type="value">1.19.46 其他医学处置</span></li>
+                            <li><span class="file" name="referral_sign" type="value">1.19.47 转诊标志</span></li>
+                            <li><span class="file" name="referral_out_hospital_name" type="value">1.19.48 转出医疗机构名称</span></li>
+                            <li><span class="file" name="referral_out_hospital_code" type="value">1.19.49 转出医疗机构代码</span></li>
+                            <li><span class="file" name="referral_out_department_name" type="value">1.19.50 转出医疗机构科室名称</span></li>
+                            <li><span class="file" name="referral_medicalinstitution_name" type="value">1.19.51 转入医疗机构名称</span></li>
+                            <li><span class="file" name="referral_medicalinstitution_code" type="value">1.19.52 转入医疗机构代码</span></li>
+                            <li><span class="file" name="referral_department_name" type="value">1.19.53 转入机构科室名称</span></li>
+                            <li><span class="file" name="referral_record" type="value">1.19.54 转诊记录</span></li>
+                            <li><span class="file" name="referral_DATE" type="value">1.19.55 转诊日期</span></li>
+                            <li><span class="file" name="referral_reason" type="value">1.19.56 转诊原因</span></li>
+                            <li><span class="file" name="treatment_scheme" type="value">1.19.57 治疗方案</span></li>
+                            <li><span class="file" name="recovery_measure_guidliance" type="value">1.19.58 康复措施指导</span></li>
+                            <li><span class="file" name="out_of_hospital_diagnosis_name" type="value">1.19.59 出院诊断名称</span></li>
+                            <li><span class="file" name="out_of_hospital_diagnosis_code" type="value">1.19.60 出院诊断代码</span></li>
+                            <li><span class="file" name="treatment_result" type="value">1.19.61 治疗结果代码</span></li>
+                            <li><span class="file" name="out_of_hospital_DATE" type="value">1.19.62 出院日期</span></li>
+                            <li><span class="file" name="deaths_underlying_code" type="value">1.19.63 根本死因代码</span></li>
+                            <li><span class="file" name="death_DATE" type="value">1.19.64 死亡日期时间</span></li>
+                            <li><span class="file" name="fee_hospitalised_type_name" type="value">1.19.65 住院费用分类名称</span></li>
+                            <li><span class="file" name="fee_hospitalised_type_code" type="value">1.19.66 住院费用分类代码</span></li>
+                            <li><span class="file" name="fee_hospitalised" type="value">1.19.67 住院费用金颌(元)</span></li>
+                            <li><span class="file" name="payment_method" type="value">1.19.68 医疗付款方式代码</span></li>
+                            <li><span class="file" name="means_of_payment_fee" type="value">1.19.69住院费用结算方式代码</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="consultation_information">1.20 会诊信息数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="health_record_ID" type="value">1.20.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="consultation_ID" type="value">1.20.2 会诊单编号</span></li>
+                            <li><span class="file" name="identity_card_ID" type="value">1.20.3 本人身份证号</span></li>
+                            <li><span class="file" name="consultation_reason" type="value">1.20.4 会诊原因</span></li>
+                            <li><span class="file" name="consultation_comment" type="value">1.20.5 会诊意见</span></li>
+                            <li><span class="file" name="hospital_code" type="value">1.20.6 会诊所在医疗卫生机构代码</span></li>
+                            <li><span class="file" name="hospital_name" type="value">1.20.7 会诊所在医疗卫生机构名称</span></li>
+                            <li><span class="file" name="consultation_physician" type="value">1.20.8 会诊医师姓名</span></li>
+                            <li><span class="file" name="physician_name" type="value">1.20.9 责任医师姓名</span></li>
+                            <li><span class="file" name="consultation_DATE" type="value">1.20.10 会诊日期</span></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="referral_information">1.21 转诊信息数据元专用属性</span>
+                    	<ul>
+                        	<li><span class="file" name="health_record_ID" type="value">1.21.1 城乡居民健康档案编号</span></li>
+                            <li><span class="file" name="identity_card_ID" type="value">1.21.2 本人身份证号</span></li>
+                            <li><span class="file" name="referral_patient_phonenum" type="value">1.21.3 转诊患者电话号码</span></li>
+                            <li><span class="file" name="referral_DATE" type="value">1.21.4 转诊日期</span></li>
+                            <li><span class="file" name="referral_medicalinstitution_name" type="value">1.21.5 转人医疗机构名称</span></li>
+                            <li><span class="file" name="referral_medicalinstitution_code" type="value">1.21.6 转人医疗机构代码</span></li>
+                            <li><span class="file" name="referral_department_name" type="value">1.21.7 转人机构科室名称</span></li>
+                            <li><span class="file" name="engage_doctor_name" type="value">1.21.8 接诊医师姓名</span></li>
+                            <li><span class="file" name="referral_doctor_name" type="value">1.21.9 转诊医师姓名</span></li>
+                            <li><span class="file" name="referral_doctor_phone_num" type="value">1.21.10 转诊医师电话号码</span></li>
+                            <li><span class="file" name="referral_out_hospital_name" type="value">1.21.11 转出医疗机构名称</span></li>
+                            <li><span class="file" name="referral_out_hospital_code" type="value">1.21.12 转出医疗机构代码</span></li>
+                            <li><span class="file" name="referral_reason" type="value">1.21.13 转诊原因</span></li>
+                            <li><span class="file" name="past_medical_history" type="value">1.21.14 既往疾病史</span></li>
+                            <li><span class="file" name="past_medical_history_code" type="value">1.21.15 既往疾病种类代码</span></li>
+                            <li><span class="file" name="check_type" type="value">1.21.16 检查(检验)类别</span></li>
+                            <li><span class="file" name="check_item_name" type="value">1.21.17 检查(检验)项目名称</span></li>
+                            <li><span class="file" name="check_item_code" type="value">1.21.18 检查(检验)项目代码</span></li>
+                            <li><span class="file" name="check_result_code" type="value">1.21.19 检查(检验)结果代码</span></li>
+                            <li><span class="file" name="check_result" type="value">1.21.20 检查(检验)定量结果</span></li>
+                            <li><span class="file" name="unit_of_measurement" type="value">1.21.21 检查(检验)计量单位</span></li>
+                            <li><span class="file" name="traditional_chinese_medicine_category_code" type="value">1.21.22 中药类别代码</span></li>
+                            <li><span class="file" name="drug_type" type="value">1.21.23 药物类型</span></li>
+                            <li><span class="file" name="drug_name" type="value">1.21.24 药物名称</span></li>
+                            <li><span class="file" name="drug_dose_type" type="value">1.21.25 药物剂型代码</span></li>
+                            <li><span class="file" name="days_of_use_drug" type="value">1.21.26 用药天数</span></li>
+                            <li><span class="file" name="drup_consumption" type="value">1.21.27 药物使用频率</span></li>
+                            <li><span class="file" name="drug_dose_unit" type="value">1.21.28 药物使用剂量单位</span></li>
+                            <li><span class="file" name="drup_use_frequency" type="value">1.21.29 药物使用次剂量</span></li>
+                            <li><span class="file" name="drug_total_dose" type="value">1.21.30 药物使用总剂量</span></li>
+                            <li><span class="file" name="access_to_drug_code" type="value">1.21.31 药物使用途径代码</span></li>
+                            <li><span class="file" name="DATE_of_end_drug" type="value">1.21.32 用药停止日期时间</span></li>
+                            <li><span class="file" name="operation_name" type="value">1.21.33 手术(操作)名称</span></li>
+                            <li><span class="file" name="operation_code" type="value">1.21.34 手术(操作)名称</span></li>
+                            <li><span class="file" name="operation_DATE" type="value">1.21.35 手术(操作)日期时间</span></li>
+                            <li><span class="file" name="methods_of_anesthesia_name" type="value">1.21.36 麻醉方法名称</span></li>
+                            <li><span class="file" name="methods_of_anesthesia_code" type="value">1.21.37 麻醉方法代码</span></li>
+                            <li><span class="file" name="other_dispose" type="value">1.21.38 其他医学处置</span></li>
+                            <li><span class="file" name="diagnosis_name" type="value">1.21.39 诊断名称</span></li>
+                            <li><span class="file" name="diagnosis_code" type="value">1.21.40 诊断代码</span></li>
+                            <li><span class="file" name="case_number" type="value">1.21.41 病案号</span></li>
+                            <li><span class="file" name="treatment_scheme" type="value">1.21.42 治疗方案</span></li>
+                            <li><span class="file" name="recovery_measure_guidliance" type="value">1.21.43 康复措施指导</span></li>
+                        </ul>
+                    </li>
+                    <li class="closed"><span class="folder" name="personalinfo">1.1 个人信息</span>
+                    	<ul>
+                        	<li><span class="file" name="user_name" type="value">1.1.1 本人姓名</span></li>
+                            <li><span class="file" name="gender_code" type="value">1.1.2 性别代码</span></li>
+                            <li><span class="file" name="date_of_birth" type="value">1.1.3 出生日期</span></li>
+                            <li><span class="file" name="marriage_status_code" type="value">1.1.4 婚姻状况代码</span></li>
+                            <li><span class="file" name="identity_card_code" type="value">1.1.5 身份证件类别代码</span></li>
+                            <li><span class="file" name="identity_card_ID" type="value">1.1.6 身份证件号码</span></li>
+                            <li><span class="file" name="province" type="value">1.1.7 家庭地址-省</span></li>
+                            <li><span class="file" name="city" type="value">1.1.8 家庭地址-市</span></li>
+                            <li><span class="file" name="country" type="value">1.1.9 家庭地址-县</span></li>
+                            <li><span class="file" name="viliage" type="value">1.1.10 家庭地址-乡</span></li>
+                            <li><span class="file" name="street" type="value">1.1.11 家庭地址-村</span></li>
+                            <li><span class="file" name="street_number" type="value">1.1.12 家庭地址-门牌号码</span></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+           </li>
+	</ul>
+    </div>
+	<div class="main_body">
+    <h1>健康检测大数据</h1>
+    <div class="datarea">
+    	<div class="text">所属表:</div>
+        <input id="table_Name" disabled="disabled"/>
+    	<div class="text">字段名称:</div>
+        <input id="attr_Name" disabled="disabled"/>
+        <div class="text">索引号:</div>
+        <input id="attr_code" disabled="disabled"/>
+        <div class="text">值:</div>
+        <input id="attr_value" disabled="disabled"/>
+    </div>
+    <div id="datarea"></div>
+  </div>
+</div>
+</body>
+</html>

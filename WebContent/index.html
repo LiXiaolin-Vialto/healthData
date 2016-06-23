@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>健康检测大数据</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script type="text/javascript" src="lib/js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.0.0/css/bootstrap.css">
+	<script type="text/javascript" src ="lib/bootstrap-3.0.0/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src = "lib/mustache.js/mustache.js"></script>
+	<script type="text/javascript" src = "lib/js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<ul>
+				<li><a href="#">首 页</a>
+				<li><a href="#">疾病信息</a></li>
+				<li><a href="#">健康保健</a></li>
+				<li><a href="#">个人信息</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="left">
+			<button class="btn btn-default add" type="button" data-toggle="modal" data-target="#personal_info_panel" >添加+</button>
+			<div id = "personal_settings">
+
+			</div>
+		</div>
+		<div class="right">右边</div>
+	</div>
+	<div id="personal_info_panel" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">close</span>
+					</button>
+					<h4>您希望显示哪些信息？</h4>
+				</div>
+				<div class="modal-body">
+					<form name = "myform" >
+						<h5>身体基本信息</h5>
+						<label>
+					    	<input type="checkbox" name = "身体基本信息" value="身高">身高
+					    </label>
+					    <label>
+					    	<input type="checkbox" name = "身体基本信息"  value="体重">体重
+					    </label>
+					   <label>
+					    	<input type="checkbox" name = "身体基本信息"  value="腰围">腰围
+					    </label>
+					    <label>
+					    	<input type="checkbox"  name = "身体基本信息" value="BMI" >BMI
+					    </label>
+					    <label>
+					    	<input type="checkbox" name = "身体基本信息"  value="饮食习惯">饮食习惯
+					    </label>
+					    <label>
+					    	<input type="checkbox" name = "身体基本信息"  value="体温">体温
+					    </label>
+					    <label>
+					    	<input type="checkbox" name = "身体基本信息"  value="脉搏">脉搏
+					    </label>
+					    <label>
+					    	<input type="checkbox" name = "身体基本信息"  value="血压">血压
+					    </label>
+					    <h5>就诊信息</h5>
+					    <label>
+					    	<input type="checkbox" name = "就诊信息" value="门诊信息">门诊信息
+					    </label>
+					    <label>
+					    	<input type="checkbox" name = "就诊信息"  value="住院信息">住院信息
+					    </label>
+					   <label>
+					    	<input type="checkbox" name = "就诊信息"  value="会诊信息">会诊信息
+					    </label>
+					    <label>
+					    	<input type="checkbox"  name = "就诊信息" value="转诊信息" >转诊信息
+					    </label>
+					    <h5>疾病信息</h5>
+					    <label>
+					    <input type="checkbox" name="就诊信息" value="传染病信息">传染病信息
+					    </label>
+					    <label>
+					    <input type="checkbox" name="就诊信息" value="食源性疾病">食源性疾病
+					    </label>
+					    <label>
+					    <input type="checkbox" name="就诊信息" value="高血压">高血压
+					    </label>
+					    <label>
+					    <input type="checkbox" name="就诊信息" value="2型糖尿病">2型糖尿病
+					    </label>
+					    <label>
+					    <input type="checkbox" name="就诊信息" value="重症精神病">重症精神病
+					    </label>
+					    <label>
+					    <input type="checkbox" name="就诊信息" value="职业病">职业病
+					    </label>
+					    <h5>生产信息</h5>
+					    <label>
+					    	<input type="checkbox" name="生产信息" value="产前体检表">产前体检表
+					    </label>
+					    <label>
+					    	<input type="checkbox" name="生产信息" value="产后体检表">产后体检表
+					    </label>
+					    <label>
+					    	<input type="checkbox" name="生产信息" value="产后42天体检表">产后42天体检表
+					    </label>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" id="save">保存</button> 
+					<button class="btn btn-default" id="cancel" data-dismiss="modal">取消</button> 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src = "js/index.js"></script>
+</body>
+</html>
